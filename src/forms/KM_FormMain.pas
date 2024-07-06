@@ -6,8 +6,8 @@ uses
   ComCtrls, Controls, Buttons, Dialogs, ExtCtrls, Forms, Graphics, Menus, StdCtrls,
   KM_RenderControl, KM_CommonTypes,
   KM_WindowParams, KM_SettingsDev, KM_GameTypes,
-  KM_Defaults, KM_ResExporter,
-  {$IFDEF FPC} LResources, Spin, ExpandPanels, LCLIntf, LCLType {$ENDIF}
+  KM_Defaults, KM_ResExporter, ExpandPanels,
+  {$IFDEF FPC} LResources, Spin, LCLIntf, LCLType {$ENDIF}
   {$IFNDEF FPC} Vcl.Samples.Spin {$ENDIF}  // For some unnown reason Delphi auto add Vcl.Samples.Spin when use {$IFDEF WDC}
   {$IFDEF MSWindows} KM_VclMenuHint, ShellAPI, Windows, Messages {$ENDIF}
   ;
@@ -43,6 +43,8 @@ type
     Export_Sounds1: TMenuItem;
     mnExportHouseAnim: TMenuItem;
     mnExportUnitAnim: TMenuItem;
+    mnExportHDUnitThoughts: TMenuItem;
+    mnExportRPL: TMenuItem;
     RGPlayer: TRadioGroup;
     btnGameStop: TButton;
     OpenMissionMenu: TMenuItem;
@@ -107,33 +109,54 @@ type
     chkShowSoil: TCheckBox;
     chkShowFlatArea: TCheckBox;
     chkShowEyeRoutes: TCheckBox;
+    edDebugText: TEdit;
+    seDebugValue: TSpinEdit;
+    Label11: TLabel;
+    Label10: TLabel;
+    btFindObjByUID: TButton;
+    Label13: TLabel;
+    Label15: TLabel;
+    Label14: TLabel;
+    chkDebugScripting: TCheckBox;
+    cpLogs: TMyRollOut;
+    cpMisc: TMyRollOut;
+    cpGraphicTweaks: TMyRollOut;
+    cpUserInreface: TMyRollOut;
+    cpAI: TMyRollOut;
+    cpGameAdv: TMyRollOut;
+    cpScripting: TMyRollOut;
+    cpDebugRender: TMyRollOut;
+    chkJamMeter: TCheckBox;
+    chkShowTerrainOverlays: TCheckBox;
+    chkGipAsBytes: TCheckBox;
+    chkLoadUnsupSaves: TCheckBox;
+    chkHeight: TCheckBox;
+    sePauseBeforeTick: TSpinEdit;
+    seMakeSaveptBeforeTick: TSpinEdit;
+    seCustomSeed: TSpinEdit;
     {$IFDEF WDC}
-    mainGroup: TCategoryPanelGroup;
-    cpGameControls: TCategoryPanel;
-    cpDebugRender: TCategoryPanel;
-    cpAI: TCategoryPanel;
-    cpUserInreface: TCategoryPanel;
-    cpGraphicTweaks: TCategoryPanel;
-    cpLogs: TCategoryPanel;
-    cpGameAdv: TCategoryPanel;
-    cpPerfLogs: TCategoryPanel;
+    mainGroup: TGroupBox;
+    cpGameControls: TMyRollOut;
+    cpDebugRender: TMyRollOut;
+    cpAI: TMyRollOut;
+    cpUserInreface: TMyRollOut;
+    cpGraphicTweaks: TMyRollOut;
+    cpLogs: TMyRollOut;
+    cpGameAdv: TMyRollOut;
+    cpPerfLogs: TMyRollOut;
     chkLoadUnsupSaves: TCheckBox;
     chkJamMeter: TCheckBox;
     chkShowTerrainOverlays: TCheckBox;
     chkDebugScripting: TCheckBox;
     chkHeight: TCheckBox;
-    cpScripting: TCategoryPanel;
+    cpScripting: TMyRollOut;
     chkShowDeposits: TCheckBox;
     sePauseBeforeTick: TSpinEdit;
-    Label8: TLabel;
-    Label9: TLabel;
     seMakeSaveptBeforeTick: TSpinEdit;
-    Label12: TLabel;
-    seCustomSeed: TSpinEdit;
-    cpMisc: TCategoryPanel;
+    cpMisc: TMyRollOut;
     mnExportRPL: TMenuItem;
     chkGipAsBytes: TCheckBox;
-    cpDebugInput: TCategoryPanel;
+    cpDebugInput: TMyRollOut;
     Label14: TLabel;
     Label15: TLabel;
     Label13: TLabel;
@@ -143,6 +166,9 @@ type
     seDebugValue: TSpinEdit;
     edDebugText: TEdit;
     {$ENDIF}
+    Label8: TLabel;
+    Label9: TLabel;
+    Label12: TLabel;
     {$IFDEF FPC}
     mainGroup: TGroupBox;
     GroupBox3: TGroupBox;
@@ -263,6 +289,7 @@ type
     N15: TMenuItem;
     Openscriptfile1: TMenuItem;
 
+    procedure chkShowTerrainIdsChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -321,11 +348,12 @@ type
     procedure ExportGameStatsClick(Sender: TObject);
     procedure ResourceValues1Click(Sender: TObject);
     procedure ReloadSettingsClick(Sender: TObject);
+    procedure ReloadLibxClick(Sender: TObject);
     procedure SaveSettingsClick(Sender: TObject);
     procedure SaveEditableMission1Click(Sender: TObject);
     procedure ValidateGameStatsClick(Sender: TObject);
     procedure LoadSavThenRplClick(Sender: TObject);
-    procedure ReloadLibxClick(Sender: TObject);
+    procedure Button_UpdateUI_Click(Sender: TObject);
     procedure mnExportRngChecksClick(Sender: TObject);
     procedure btFindObjByUIDClick(Sender: TObject);
     procedure mnExportRPLClick(Sender: TObject);
@@ -357,6 +385,8 @@ type
     fDevSettings: TKMDevSettings;
     fStartVideoPlayed: Boolean;
     fUpdating: Boolean;
+    OldCreateOrder: Boolean;
+    TextHeight: Int32;
     fMissionDefOpenPath: UnicodeString;
     fOnControlsUpdated: TObjectIntegerEvent;
 
@@ -444,9 +474,12 @@ uses
   KM_ResTypes,
   KM_GameAppSettings;
 
-//{$IFDEF WDC}
+{$IFDEF WDC}
   {$R *.dfm}
-//{$ENDIF}
+{$ENDIF}
+{$IFDEF FPC}
+  {$R *.lfm}
+{$ENDIF}
 
 
 procedure ExportDone(aResourceName: String);
@@ -497,12 +530,16 @@ begin
   mainGroup.BringToFront;
   {$ENDIF}
 
-  chkShowFlatTerrain.Tag := Ord(dcFlatTerrain);
-  tbWaterLight.Tag := Ord(dcFlatTerrain);
+  fUpdating := True;
 
+  if chkShowFlatTerrain <> nil then
+  begin
+    chkShowFlatTerrain.Tag := 0;
+    chkShowFlatTerrain.Tag := Int64(dcFlatTerrain);
+    tbWaterLight.Tag := Int64(dcFlatTerrain);
+  end;
   fDevSettings := TKMDevSettings.Create(ExeDir, mainGroup, cpGameControls);
 
-  fUpdating := True;
   try
     fDevSettings.Load;
   finally
@@ -510,6 +547,11 @@ begin
   end;
 
   fResExporter := TKMResExporter.Create;
+end;
+
+procedure TFormMain.chkShowTerrainIdsChange(Sender: TObject);
+begin
+
 end;
 
 
@@ -643,9 +685,10 @@ begin
 end;
 
 
-procedure TFormMain.ReloadLibxClick(Sender: TObject);
+procedure TFormMain.Button_UpdateUI_Click(Sender: TObject);
 begin
-  gRes.LoadLocaleAndFonts(gGameSettings.Locale, gGameSettings.GFX.LoadFullFonts);
+    if gGameApp.Game <> nil then
+       gGameApp.Game.GamePlayInterface.UpdateClockUI;
 end;
 
 
@@ -1179,7 +1222,7 @@ end;
 procedure TFormMain.ConstrolsDisableTabStops;
 
   {$IFDEF WDC}
-  procedure CategoryPanelDisableTabStops(aPanel: TCategoryPanel);
+  procedure CategoryPanelDisableTabStops(aPanel: TMyRollOut);
   var
     panelSurface: TCategoryPanelSurface;
   begin
@@ -1190,13 +1233,13 @@ procedure TFormMain.ConstrolsDisableTabStops;
     end;
   end;
 
-  procedure GroupDisableTabStops(aGroup: TCategoryPanelGroup);
+  procedure GroupDisableTabStops(aGroup: TMyRollOut);
   var
     I: Integer;
   begin
     for I := 0 to aGroup.ControlCount - 1 do
-      if (aGroup.Controls[I] is TCategoryPanel) then
-        CategoryPanelDisableTabStops(TCategoryPanel(aGroup.Controls[I]));
+      if (aGroup.Controls[I] is TMyRollOut) then
+        CategoryPanelDisableTabStops(TMyRollOut(aGroup.Controls[I]));
   end;
   {$ENDIF}
 
@@ -1320,7 +1363,7 @@ end;
 procedure TFormMain.ControlsReset;
 
   {$IFDEF WDC}
-  procedure ResetCategoryPanel(aPanel: TCategoryPanel);
+  procedure ResetCategoryPanel(aPanel: TMyRollOut);
   var
     panelSurface: TCategoryPanelSurface;
   begin
@@ -1331,13 +1374,13 @@ procedure TFormMain.ControlsReset;
     end;
   end;
 
-  procedure ResetGroup(aGroup: TCategoryPanelGroup);
+  procedure ResetGroup(aGroup: TMyRollOut);
   var
     I: Integer;
   begin
     for I := 0 to aGroup.ControlCount - 1 do
-      if (aGroup.Controls[I] is TCategoryPanel) then
-        ResetCategoryPanel(TCategoryPanel(aGroup.Controls[I]));
+      if (aGroup.Controls[I] is TMyRollOut) then
+        ResetCategoryPanel(TMyRollOut(aGroup.Controls[I]));
   end;
   {$ENDIF}
 
@@ -1486,6 +1529,12 @@ begin
 end;
 
 
+procedure TFormMain.ReloadLibxClick(Sender: TObject);
+begin
+  gRes.LoadLocaleAndFonts(gGameSettings.Locale, gGameSettings.GFX.LoadFullFonts);
+end;
+
+
 procedure TFormMain.UpdateFormState;
 var
   I: Integer;
@@ -1545,9 +1594,15 @@ begin
   MessageDlg(Format(gResTexts[TX_GAME_FOLDER_PERMISSIONS_ERROR], [ExeDir]), mtError, [mbClose], 0);
 end;
 
+function GetCheckBoxValue(chlbx: TCheckBox): Boolean;
+begin
+  if chlbx = nil then
+    Result := false
+  else
+    Result := chlbx.Checked;
+end;
 
 procedure TFormMain.ControlsUpdate(Sender: TObject);
-
   procedure UpdateVisibleLayers(aCheckBox: TCheckBox; aLayer: TKMGameVisibleLayer);
   begin
     if Sender = aCheckBox then
@@ -1574,19 +1629,19 @@ begin
     tbPassability.Max := Ord(High(TKMTerrainPassability));
     Label2.Caption := IfThen(I <> 0, PASSABILITY_GUI_TEXT[TKMTerrainPassability(I)], '');
     SHOW_TERRAIN_PASS := I;
-    SHOW_TERRAIN_WIRES := chkShowWires.Checked;
-    SHOW_TERRAIN_IDS := chkShowTerrainIds.Checked;
-    SHOW_TERRAIN_KINDS := chkShowTerrainKinds.Checked;
-    SHOW_TERRAIN_TILES_GRID := chkTilesGrid.Checked;
-    SHOW_UNIT_ROUTES := chkShowRoutes.Checked;
-    SHOW_UNIT_ROUTES_STEPS := chkShowRoutesSteps.Checked;
-    SHOW_SEL_BUFFER := chkSelectionBuffer.Checked;
-    SHOW_GAME_TICK := chkShowGameTick.Checked;
-    SHOW_FPS := chkShowFPS.Checked;
-    SHOW_UIDs := chkUIDs.Checked;
-    SHOW_SELECTED_OBJ_INFO := chkSelectedObjInfo.Checked;
-    SHOW_HANDS_INFO := chkHands.Checked;
-    SHOW_VIEWPORT_INFO := chkViewport.Checked;
+    SHOW_TERRAIN_WIRES := GetCheckBoxValue(chkShowWires);
+    SHOW_TERRAIN_IDS := GetCheckBoxValue(chkShowTerrainIds);
+    SHOW_TERRAIN_KINDS := GetCheckBoxValue(chkShowTerrainKinds);
+    SHOW_TERRAIN_TILES_GRID := GetCheckBoxValue(chkTilesGrid);
+    SHOW_UNIT_ROUTES := GetCheckBoxValue(chkShowRoutes);
+    SHOW_UNIT_ROUTES_STEPS := GetCheckBoxValue(chkShowRoutes);
+    SHOW_SEL_BUFFER := GetCheckBoxValue(chkSelectionBuffer);
+    SHOW_GAME_TICK := GetCheckBoxValue(chkShowGameTick);
+    SHOW_FPS := GetCheckBoxValue(chkShowFPS);
+    SHOW_UIDs := GetCheckBoxValue(chkUIDs);
+    SHOW_SELECTED_OBJ_INFO := GetCheckBoxValue(chkSelectedObjInfo);
+    SHOW_HANDS_INFO := GetCheckBoxValue(chkHands);
+    SHOW_VIEWPORT_INFO := GetCheckBoxValue(chkViewport);
 
     {$IFDEF WDC} //one day update .lfm for lazarus...
     DO_DEBUG_TER_RENDER := chkDebugTerrainRender.Checked;
@@ -1651,12 +1706,12 @@ begin
     end;
     {$ENDIF}
 
-    SKIP_RENDER := chkSkipRender.Checked;
-    SKIP_SOUND := chkSkipSound.Checked;
-    DISPLAY_SOUNDS := chkPaintSounds.Checked;
-    SHOW_VIEWPORT_POS := chkViewportPos.Checked;
+    SKIP_RENDER := GetCheckBoxValue(chkSkipRender);
+    SKIP_SOUND := GetCheckBoxValue(chkSkipSound);
+    DISPLAY_SOUNDS := GetCheckBoxValue(chkPaintSounds);
+    SHOW_VIEWPORT_POS := GetCheckBoxValue(chkViewportPos);
 
-    gbFindObjByUID.Enabled := chkFindObjByUID.Checked;
+    gbFindObjByUID.Enabled := GetCheckBoxValue(chkFindObjByUID);
 
     if AllowFindObjByUID then
       btFindObjByUIDClick(nil)
@@ -1667,24 +1722,24 @@ begin
   //AI
   if allowDebugChange then
   begin
-    SHOW_AI_WARE_BALANCE := chkShowBalance.Checked;
-    OVERLAY_DEFENCES := chkShowDefences.Checked;
-    OVERLAY_DEFENCES_A := chkShowDefencesAnimate.Checked;
-    OVERLAY_AI_BUILD := chkBuild.Checked;
-    OVERLAY_AI_COMBAT := chkCombat.Checked;
-    OVERLAY_AI_PATHFINDING := chkPathfinding.Checked;
-    OVERLAY_AI_SUPERVISOR := chkSupervisor.Checked;
-    OVERLAY_AI_VEC_FLD_ENEM := chkShowArmyVectorFieldEnemy.Checked;
-    OVERLAY_AI_VEC_FLD_ALLY := chkShowArmyVectorFieldAlly.Checked;
-    OVERLAY_AI_CLUSTERS := chkShowClusters.Checked;
-    OVERLAY_AI_ALLIEDGROUPS := chkShowAlliedGroups.Checked;
-    OVERLAY_AI_EYE := chkAIEye.Checked;
-    OVERLAY_AI_SOIL := chkShowSoil.Checked;
-    OVERLAY_AI_FLATAREA := chkShowFlatArea.Checked;
-    OVERLAY_AI_ROUTES := chkShowEyeRoutes.Checked;
-    OVERLAY_AVOID := chkShowAvoid.Checked;
-    OVERLAY_OWNERSHIP := chkShowOwnership.Checked;
-    OVERLAY_NAVMESH := chkShowNavMesh.Checked;
+    SHOW_AI_WARE_BALANCE := GetCheckBoxValue(chkShowBalance);
+    OVERLAY_DEFENCES := GetCheckBoxValue(chkShowDefences);
+    OVERLAY_DEFENCES_A := GetCheckBoxValue(chkShowDefencesAnimate);
+    OVERLAY_AI_BUILD := GetCheckBoxValue(chkBuild);
+    OVERLAY_AI_COMBAT := GetCheckBoxValue(chkCombat);
+    OVERLAY_AI_PATHFINDING := GetCheckBoxValue(chkPathfinding);
+    OVERLAY_AI_SUPERVISOR := GetCheckBoxValue(chkSupervisor);
+    OVERLAY_AI_VEC_FLD_ENEM := GetCheckBoxValue(chkShowArmyVectorFieldEnemy);
+    OVERLAY_AI_VEC_FLD_ALLY := GetCheckBoxValue(chkShowArmyVectorFieldAlly);
+    OVERLAY_AI_CLUSTERS := GetCheckBoxValue(chkShowClusters);
+    OVERLAY_AI_ALLIEDGROUPS := GetCheckBoxValue(chkShowAlliedGroups);
+    OVERLAY_AI_EYE := GetCheckBoxValue(chkAIEye);
+    OVERLAY_AI_SOIL := GetCheckBoxValue(chkShowSoil);
+    OVERLAY_AI_FLATAREA := GetCheckBoxValue(chkShowFlatArea);
+    OVERLAY_AI_ROUTES := GetCheckBoxValue(chkShowEyeRoutes);
+    OVERLAY_AVOID := GetCheckBoxValue(chkShowAvoid);
+    OVERLAY_OWNERSHIP := GetCheckBoxValue(chkShowOwnership);
+    OVERLAY_NAVMESH := GetCheckBoxValue(chkShowNavMesh);
     OVERLAY_HIGHLIGHT_POLY := seHighlightNavMesh.Value;
 
     OWN_MARGIN := tbOwnMargin.Position;
@@ -1693,20 +1748,20 @@ begin
   end;
 
   //UI
-  SHOW_CONTROLS_OVERLAY := chkUIControlsBounds.Checked;
-  SHOW_TEXT_OUTLINES := chkUITextBounds.Checked;
-  SHOW_CONTROLS_ID := chkUIControlsID.Checked;
-  SHOW_FOCUSED_CONTROL := chkUIFocusedControl.Checked;
-  SHOW_CONTROL_OVER := chkUIControlOver.Checked;
-  SKIP_RENDER_TEXT := chkSkipRenderText.Checked;
-  DBG_UI_HINT_POS := chkCursorCoordinates.Checked;
+  SHOW_CONTROLS_OVERLAY := GetCheckBoxValue(chkUIControlsBounds);
+  SHOW_TEXT_OUTLINES := GetCheckBoxValue(chkUITextBounds);
+  SHOW_CONTROLS_ID := GetCheckBoxValue(chkUIControlsID);
+  SHOW_FOCUSED_CONTROL := GetCheckBoxValue(chkUIFocusedControl);
+  SHOW_CONTROL_OVER := GetCheckBoxValue(chkUIControlOver);
+  SKIP_RENDER_TEXT := GetCheckBoxValue(chkSkipRenderText);
+  DBG_UI_HINT_POS := GetCheckBoxValue(chkCursorCoordinates);
 
   {$IFDEF WDC} // one day update .lfm for lazarus...
-  gGameSettings.GFX.AllowSnowHouses := chkSnowHouses.Checked;
-  gGameSettings.GFX.InterpolatedRender := chkInterpolatedRender.Checked;
-  gGameSettings.GFX.InterpolatedAnimations := chkInterpolatedAnims.Checked;
+  gGameSettings.GFX.AllowSnowHouses := GetCheckBoxValue(chkSnowHouses);
+  gGameSettings.GFX.InterpolatedRender := GetCheckBoxValue(chkInterpolatedRender);
+  gGameSettings.GFX.InterpolatedAnimations := GetCheckBoxValue(chkInterpolatedAnims);
 
-  ALLOW_LOAD_UNSUP_VERSION_SAVE := chkLoadUnsupSaves.Checked;
+  ALLOW_LOAD_UNSUP_VERSION_SAVE := GetCheckBoxValue(chkLoadUnsupSaves);
   {$ENDIF}
 
   //Graphics
@@ -1729,29 +1784,29 @@ begin
   end;
 
   //Logs
-  SHOW_LOG_IN_CHAT := chkLogShowInChat.Checked;
-  SHOW_LOG_IN_GUI := chkLogShowInGUI.Checked;
-  UPDATE_LOG_FOR_GUI := chkLogUpdateForGUI.Checked;
-  LOG_GAME_TICK := chkLogGameTick.Checked;
+  SHOW_LOG_IN_CHAT := GetCheckBoxValue(chkLogShowInChat);
+  SHOW_LOG_IN_GUI := GetCheckBoxValue(chkLogShowInGUI);
+  UPDATE_LOG_FOR_GUI := GetCheckBoxValue(chkLogUpdateForGUI);
+  LOG_GAME_TICK := GetCheckBoxValue(chkLogGameTick);
 
   if allowDebugChange then
   begin
-    if chkLogDelivery.Checked then
+    if GetCheckBoxValue(chkLogDelivery) then
       Include(gLog.MessageTypes, lmtDelivery)
     else
       Exclude(gLog.MessageTypes, lmtDelivery);
 
-    if chkLogCommands.Checked then
+    if GetCheckBoxValue(chkLogCommands) then
       Include(gLog.MessageTypes, lmtCommands)
     else
       Exclude(gLog.MessageTypes, lmtCommands);
 
-    if chkLogRngChecks.Checked then
+    if GetCheckBoxValue(chkLogRngChecks) then
       Include(gLog.MessageTypes, lmtRandomChecks)
     else
       Exclude(gLog.MessageTypes, lmtRandomChecks);
 
-    if chkLogNetConnection.Checked then
+    if GetCheckBoxValue(chkLogNetConnection) then
       Include(gLog.MessageTypes, lmtNetConnection)
     else
       Exclude(gLog.MessageTypes, lmtNetConnection);
@@ -1784,7 +1839,7 @@ begin
   //Misc
   if allowDebugChange then
   begin
-    SHOW_DEBUG_OVERLAY_BEVEL := chkBevel.Checked;
+    SHOW_DEBUG_OVERLAY_BEVEL := GetCheckBoxValue(chkBevel);
     DEBUG_TEXT_FONT_ID := rgDebugFont.ItemIndex;
   end;
 

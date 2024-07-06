@@ -2,7 +2,7 @@
 {$I KaM_Remake.inc}
 interface
 uses
-  Generics.Collections,
+  SysUtils, Generics.Collections,
   KM_WorkerThread,
   KM_Networking,
   KM_PathFinding,
@@ -324,7 +324,7 @@ uses
   {$ENDIF}
   {$ENDIF}
   {$IFDEF WDC} System.Types, {$ENDIF}
-  Classes, SysUtils, Math, TypInfo,
+  Classes, Math, TypInfo,
   Dialogs,
   {$IFDEF WDC} UITypes, {$ENDIF}
   KromUtils,
@@ -3280,6 +3280,24 @@ begin
   Result := True;
 end;
 
+function DumpExceptionCallStack(E: Exception): String;
+var
+  I: Integer;
+  Frames: PPointer;
+  Report: string;
+begin
+  Report := 'Program exception! ' + LineEnding +
+    'Stacktrace:' + LineEnding + LineEnding;
+  if E <> nil then begin
+    Report := Report + 'Exception class: ' + E.ClassName + LineEnding +
+    'Message: ' + E.Message + LineEnding;
+  end;
+  Report := Report + BackTraceStrFunc(ExceptAddr);
+  Frames := ExceptFrames;
+  for I := 0 to ExceptFrameCount - 1 do
+    Report := Report + LineEnding + BackTraceStrFunc(Frames[I]);
+  Result := Report;
+end;
 
 function TKMGame.PlayNextTick: Boolean;
 var
@@ -3340,8 +3358,8 @@ begin
     except
         on E: Exception do
         begin
-          gLog.AddTime('Exception on tick ' + IntToStr(fParams.Tick) + ': ' + E.Message
-                       {$IFDEF WDC} + sLineBreak + E.StackTrace {$ENDIF});
+          gLog.AddTime('Exception on tick ' + IntToStr(fParams.Tick) + ': ' + E.Message +
+                       sLineBreak + DumpExceptionCallStack(E));
           raise;
         end;
     end;

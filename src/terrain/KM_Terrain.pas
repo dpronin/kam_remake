@@ -95,7 +95,9 @@ type
                        aRandomAge: Boolean = False; aKeepOldObject: Boolean = False; aRemoveOverlay: Boolean = True;
                        aDoUpdate: Boolean = True);
     procedure SetHouse(const aLoc: TKMPoint; aHouseType: TKMHouseType; aHouseStage: TKMHouseStage; aOwner: TKMHandID; const aFlattenTerrain: Boolean = False);
+
     procedure SetHouseAreaOwner(const aLoc: TKMPoint; aHouseType: TKMHouseType; aOwner: TKMHandID);
+
 
     procedure RemovePlayer(aPlayer: TKMHandID);
     procedure RemRoad(const aLoc: TKMPoint);

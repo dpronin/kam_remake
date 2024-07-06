@@ -1,227 +1,590 @@
 { This is an automatically generated lazarus resource file }
 
 LazarusResources.Add('TFormMain','FORMDATA',[
-  'TPF0'#9'TFormMain'#8'FormMain'#4'Left'#3#12#2#6'Height'#3#165#3#3'Top'#2'y'#5
-  +'Width'#3#17#2#8'HelpType'#7#9'htKeyword'#11'BorderStyle'#7#6'bsNone'#12'Cli'
-  +'entHeight'#2#0#11'ClientWidth'#2#0#5'Color'#7#9'clBtnFace'#10'Font.Color'#7
-  +#12'clWindowText'#11'Font.Height'#2#245#9'Font.Name'#6#13'MS Sans Serif'#10
-  +'KeyPreview'#9#4'Menu'#7#9'MainMenu1'#7'OnClose'#7#9'FormClose'#12'OnCloseQu'
-  +'ery'#7#14'FormCloseQuery'#8'OnCreate'#7#10'FormCreate'#9'OnKeyDown'#7#11'Fo'
-  +'rmKeyDown'#10'OnKeyPress'#7#12'FormKeyPress'#7'OnKeyUp'#7#9'FormKeyUp'#12'O'
-  +'nMouseWheel'#7#14'FormMouseWheel'#6'OnShow'#7#8'FormShow'#10'LCLVersion'#6#7
-  +'2.0.7.0'#0#10'TStatusBar'#10'StatusBar1'#4'Left'#2#0#6'Height'#2#23#3'Top'#3
-  +'z'#3#5'Width'#3#17#2#6'Panels'#14#1#4'Text'#6'/KMR r7000+ / OpenGL 4.0.0 - '
-  +'Build 9.99.99.99999'#5'Width'#3#19#1#0#1#4'Text'#6#17'Map size: 999x999'#5
-  +'Width'#2'n'#0#1#4'Text'#6#17'Cursor: 1999:1999'#5'Width'#2'i'#0#1#4'Text'#6
-  +#27'Tile: 999.9:999.9 [999:999]'#5'Width'#3#140#0#0#1#4'Text'#6#14'Time: 99:'
-  +'99:99'#5'Width'#2'Z'#0#1#4'Text'#6#15'999.9 FPS (999)'#5'Width'#2'U'#0#1#4
-  +'Text'#6#13'Obj: 99999999'#5'Width'#2'Z'#0#1#4'Text'#6#16'Control ID: 9999'#5
-  +'Width'#2'P'#0#0#0#0#9'TGroupBox'#9'mainGroup'#4'Left'#3'H'#1#6'Height'#3'8'
-  +#3#3'Top'#2#8#5'Width'#3#190#0#7'Anchors'#11#5'akTop'#7'akRight'#0#7'Caption'
-  +#6#22' Development controls '#12'ClientHeight'#3'&'#3#11'ClientWidth'#3#186#0
-  +#8'TabOrder'#2#1#0#9'TGroupBox'#9'GroupBox4'#4'Left'#2#8#6'Height'#2'X'#3'To'
-  +'p'#3#16#2#5'Width'#3#177#0#7'Caption'#6#17' Graphics tweaks '#12'ClientHeig'
-  +'ht'#2'F'#11'ClientWidth'#3#173#0#8'TabOrder'#2#4#0#6'TLabel'#6'Label3'#4'Le'
-  +'ft'#2'd'#6'Height'#2#13#3'Top'#2#0#5'Width'#2#27#7'Caption'#6#5'Angle'#11'P'
-  +'arentColor'#8#0#0#6'TLabel'#6'Label4'#4'Left'#2'd'#6'Height'#2#13#3'Top'#2
-  +#16#5'Width'#2#27#7'Caption'#6#5'Angle'#11'ParentColor'#8#0#0#6'TLabel'#6'La'
-  +'bel1'#4'Left'#2'd'#6'Height'#2#13#3'Top'#2'0'#5'Width'#2'<'#7'Caption'#6#13
-  +'Building step'#11'ParentColor'#8#0#0#6'TLabel'#6'Label7'#4'Left'#2'd'#6'Hei'
-  +'ght'#2#13#3'Top'#2' '#5'Width'#2#27#7'Caption'#6#5'Angle'#11'ParentColor'#8
-  +#0#0#9'TTrackBar'#8'tbAngleX'#4'Left'#2#4#6'Height'#2#17#3'Top'#2#0#5'Width'
-  +#2'_'#9'Frequency'#2#5#3'Max'#2'Z'#3'Min'#2#166#8'OnChange'#7#14'ControlsUpd'
-  +'ate'#8'PageSize'#2#5#8'Position'#2#0#9'TickMarks'#7#6'tmBoth'#9'TickStyle'#7
-  +#6'tsNone'#8'TabOrder'#2#0#0#0#9'TTrackBar'#8'tbAngleY'#4'Left'#2#4#6'Height'
-  +#2#17#3'Top'#2#16#5'Width'#2'_'#9'Frequency'#2#5#3'Max'#2'Z'#3'Min'#2#166#8
-  +'OnChange'#7#14'ControlsUpdate'#8'PageSize'#2#5#8'Position'#2#0#9'TickMarks'
-  +#7#6'tmBoth'#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2#1#0#0#9'TTrackBar'#14'tb'
-  +'BuildingStep'#4'Left'#2#4#6'Height'#2#17#3'Top'#2'0'#5'Width'#2'_'#3'Max'#2
-  +'d'#8'OnChange'#7#14'ControlsUpdate'#8'Position'#2#0#9'TickMarks'#7#6'tmBoth'
-  +#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2#2#0#0#9'TTrackBar'#8'tbAngleZ'#4'Lef'
-  +'t'#2#4#6'Height'#2#17#3'Top'#2' '#5'Width'#2'_'#9'Frequency'#2#5#3'Max'#2'Z'
-  +#3'Min'#2#166#8'OnChange'#7#14'ControlsUpdate'#8'PageSize'#2#5#8'Position'#2
-  +#0#9'TickMarks'#7#6'tmBoth'#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2#3#0#0#0#9
-  +'TGroupBox'#9'GroupBox3'#4'Left'#2#8#6'Height'#2'9'#3'Top'#3#208#1#5'Width'#3
-  +#177#0#7'Caption'#6#16' User Interface '#12'ClientHeight'#2''''#11'ClientWid'
-  +'th'#3#173#0#8'TabOrder'#2#3#0#9'TCheckBox'#19'chkUIControlsBounds'#4'Left'#2
-  +#8#6'Height'#2#19#3'Top'#2#0#5'Width'#2'`'#7'Caption'#6#15'Controls bounds'#7
-  +'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#0#0#0#9'TCheckBox'#15'chkUIText'
-  +'Bounds'#4'Left'#2#8#6'Height'#2#19#3'Top'#2#16#5'Width'#2'O'#7'Caption'#6#11
-  +'Text bounds'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#1#0#0#9'TCheckBo'
-  +'x'#15'chkUIControlsID'#4'Left'#2'o'#6'Height'#2#19#3'Top'#2#0#5'Width'#2'6'
-  +#7'Caption'#6#8'Ctrls ID'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#2#0#0
-  +#0#9'TCheckBox'#13'chkSuperSpeed'#4'Left'#2#8#6'Height'#2#19#3'Top'#2'U'#5'W'
-  +'idth'#2'M'#7'Caption'#6#10'Speed x300'#7'OnClick'#7#18'chkSuperSpeedClick'#8
-  +'TabOrder'#2#0#0#0#11'TRadioGroup'#8'RGPlayer'#4'Left'#2#8#6'Height'#2'P'#3
-  +'Top'#2#0#5'Width'#3#177#0#8'AutoFill'#9#7'Caption'#6#15' Select player '#28
-  +'ChildSizing.LeftRightSpacing'#2#6#28'ChildSizing.TopBottomSpacing'#2#6#29'C'
-  +'hildSizing.EnlargeHorizontal'#7#24'crsHomogenousChildResize'#27'ChildSizing'
-  +'.EnlargeVertical'#7#24'crsHomogenousChildResize'#28'ChildSizing.ShrinkHoriz'
-  +'ontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7#14'crsScaleChi'
-  +'lds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenTopToBottom'#27'ChildSiz'
-  +'ing.ControlsPerLine'#2#4#12'ClientHeight'#2'>'#11'ClientWidth'#3#173#0#7'Co'
-  +'lumns'#2#4#9'ItemIndex'#2#0#13'Items.Strings'#1#6#1'1'#6#1'2'#6#1'3'#6#1'4'
-  +#6#1'5'#6#1'6'#6#1'7'#6#1'8'#6#1'9'#6#2'10'#6#2'11'#6#2'12'#0#7'OnClick'#7#13
-  +'RGPlayerClick'#8'TabOrder'#2#7#0#0#7'TButton'#11'Button_Stop'#4'Left'#2'`'#6
-  +'Height'#2#17#3'Top'#2'U'#5'Width'#2'Y'#7'Caption'#6#13'Stop the game'#7'OnC'
-  +'lick'#7#16'Button_StopClick'#8'TabOrder'#2#1#0#0#9'TGroupBox'#9'GroupBox2'#4
-  ,'Left'#2#8#6'Height'#3#185#0#3'Top'#3#16#1#5'Width'#3#177#0#7'Caption'#6#4' '
-  +'AI '#12'ClientHeight'#3#167#0#11'ClientWidth'#3#173#0#8'TabOrder'#2#2#0#6'T'
-  +'Label'#6'Label5'#4'Left'#2'o'#6'Height'#2#13#3'Top'#3#135#0#5'Width'#2' '#7
-  +'Caption'#6#6'Margin'#11'ParentColor'#8#7'Visible'#8#0#0#6'TLabel'#6'Label6'
-  +#4'Left'#2'o'#6'Height'#2#13#3'Top'#3#152#0#5'Width'#2'/'#7'Caption'#6#9'Thr'
-  +'eshold'#11'ParentColor'#8#7'Visible'#8#0#0#9'TCheckBox'#16'chkShowOwnership'
-  +#4'Left'#2#9#6'Height'#2#19#3'Top'#2' '#5'Width'#2'b'#7'Caption'#6#14'Show o'
-  +'wnership'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#0#0#0#9'TCheckBox'
-  +#14'chkShowNavMesh'#4'Left'#2#9#6'Height'#2#19#3'Top'#2'0'#5'Width'#2']'#7'C'
-  +'aption'#6#12'Show navmesh'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#1#0
-  +#0#9'TCheckBox'#12'chkShowAvoid'#4'Left'#2#8#6'Height'#2#19#3'Top'#2#16#5'Wi'
-  +'dth'#2's'#7'Caption'#6#19'Show avoid building'#7'OnClick'#7#14'ControlsUpda'
-  +'te'#8'TabOrder'#2#2#0#0#9'TCheckBox'#14'chkShowBalance'#4'Left'#2#8#6'Heigh'
-  +'t'#2#19#3'Top'#2#0#5'Width'#2'e'#7'Caption'#6#15'Show AI balance'#7'OnClick'
-  +#7#14'ControlsUpdate'#8'TabOrder'#2#3#0#0#9'TTrackBar'#11'tbOwnMargin'#4'Lef'
-  +'t'#2#8#6'Height'#2#12#3'Top'#3#136#0#5'Width'#2'e'#3'Max'#3#255#0#3'Min'#2
-  +'@'#8'OnChange'#7#14'ControlsUpdate'#8'Position'#2'@'#9'TickMarks'#7#6'tmBot'
-  +'h'#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2#4#7'Visible'#8#0#0#9'TTrackBar'#11
-  +'tbOwnThresh'#4'Left'#2#8#6'Height'#2#16#3'Top'#3#152#0#5'Width'#2'e'#3'Max'
-  +#3#255#0#3'Min'#2'@'#8'OnChange'#7#14'ControlsUpdate'#8'Position'#2'@'#9'Tic'
-  +'kMarks'#7#6'tmBoth'#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2#5#7'Visible'#8#0
-  +#0#9'TCheckBox'#15'chkShowDefences'#4'Left'#2#8#6'Height'#2#19#3'Top'#2'@'#5
-  +'Width'#2'^'#7'Caption'#6#13'Show defences'#7'OnClick'#7#14'ControlsUpdate'#8
-  +'TabOrder'#2#6#0#0#9'TCheckBox'#10'chkBuildAI'#4'Left'#2#8#6'Height'#2#19#3
-  +'Top'#2'P'#5'Width'#2'8'#7'Caption'#6#8'Build AI'#7'OnClick'#7#14'ControlsUp'
-  +'date'#8'TabOrder'#2#7#0#0#9'TCheckBox'#11'chkCombatAI'#4'Left'#2#8#6'Height'
-  +#2#19#3'Top'#2'`'#5'Width'#2'E'#7'Caption'#6#9'Combat AI'#7'OnClick'#7#14'Co'
-  +'ntrolsUpdate'#8'TabOrder'#2#8#0#0#9'TCheckBox'#8'chkAIEye'#4'Left'#2#8#6'He'
-  +'ight'#2#19#3'Top'#2'p'#5'Width'#2'3'#7'Caption'#6#6'AI Eye'#7'OnClick'#7#14
-  +'ControlsUpdate'#8'TabOrder'#2#9#0#0#9'TCheckBox'#8'chkBevel'#4'Left'#2'w'#6
-  +'Height'#2#19#3'Top'#2#0#5'Width'#2'/'#7'Caption'#6#5'Bevel'#7'OnClick'#7#14
-  +'ControlsUpdate'#8'TabOrder'#2#10#0#0#9'TCheckBox'#11'chkShowSoil'#4'Left'#2
-  +'d'#6'Height'#2#19#3'Top'#2'0'#5'Width'#2'%'#7'Caption'#6#4'Soil'#7'OnClick'
-  +#7#14'ControlsUpdate'#8'TabOrder'#2#11#0#0#9'TCheckBox'#15'chkShowFlatArea'#4
-  +'Left'#2'd'#6'Height'#2#19#3'Top'#2'@'#5'Width'#2'='#7'Caption'#6#9'Flat are'
-  +'a'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#12#0#0#9'TCheckBox'#16'chk'
-  +'ShowEyeRoutes'#4'Left'#2'd'#6'Height'#2#19#3'Top'#2'P'#5'Width'#2'6'#7'Capt'
-  +'ion'#6#6'Routes'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#13#0#0#0#9'T'
-  +'GroupBox'#9'GroupBox5'#4'Left'#2#8#6'Height'#3#162#0#3'Top'#2'h'#5'Width'#3
-  +#177#0#7'Caption'#6#14' Debug render '#12'ClientHeight'#3#144#0#11'ClientWid'
-  +'th'#3#173#0#8'TabOrder'#2#5#0#6'TLabel'#6'Label2'#4'Left'#2'j'#6'Height'#2
-  +#13#3'Top'#2#0#5'Width'#2'1'#7'Caption'#6#11'Passability'#11'ParentColor'#8#0
-  +#0#9'TTrackBar'#13'tbPassability'#4'Left'#2#4#6'Height'#2#17#3'Top'#2#0#5'Wi'
-  +'dth'#2'_'#3'Max'#2#14#8'OnChange'#7#14'ControlsUpdate'#8'PageSize'#2#1#8'Po'
-  +'sition'#2#0#9'TickMarks'#7#6'tmBoth'#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2
-  +#0#0#0#9'TCheckBox'#12'chkShowWires'#4'Left'#2#9#6'Height'#2#19#3'Top'#2#16#5
-  +'Width'#2'P'#7'Caption'#6#13'Terrain wires'#7'OnClick'#7#14'ControlsUpdate'#8
-  +'TabOrder'#2#1#0#0#9'TCheckBox'#13'chkShowRoutes'#4'Left'#2#9#6'Height'#2#19
-  +#3'Top'#2' '#5'Width'#2'G'#7'Caption'#6#11'Unit routes'#7'OnClick'#7#14'Cont'
-  +'rolsUpdate'#8'TabOrder'#2#2#0#0#9'TCheckBox'#18'chkSelectionBuffer'#4'Left'
-  +#2#9#6'Height'#2#19#3'Top'#2'0'#5'Width'#2'U'#7'Caption'#6#14'Selection buff'
-  +#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#3#0#0#9'TCheckBox'#17'chkShow'
-  +'TerrainIds'#4'Left'#2'\'#6'Height'#2#19#3'Top'#2#16#5'Width'#2'H'#7'Caption'
-  +#6#11'Terrain IDs'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#4#0#0#9'TCh'
-  +'eckBox'#19'chkShowTerrainKinds'#4'Left'#2'\'#6'Height'#2#19#3'Top'#2' '#5'W'
-  +'idth'#2'D'#7'Caption'#6#10'Ter. Kinds'#7'OnClick'#7#14'ControlsUpdate'#8'Ta'
-  +'bOrder'#2#5#0#0#9'TCheckBox'#12'chkTilesGrid'#4'Left'#2'\'#6'Height'#2#19#3
-  +'Top'#2'0'#5'Width'#2'>'#7'Caption'#6#10'Tiles grid'#7'OnClick'#7#14'Control'
-  +'sUpdate'#8'TabOrder'#2#6#0#0#9'TCheckBox'#15'chkShowGameTick'#4'Left'#2#9#6
-  +'Height'#2#19#3'Top'#2'@'#5'Width'#2'D'#7'Caption'#6#9'Game tick'#7'OnClick'
-  +#7#14'ControlsUpdate'#8'TabOrder'#2#7#0#0#9'TCheckBox'#13'chkSkipRender'#4'L'
-  +'eft'#2#9#6'Height'#2#19#3'Top'#2'P'#5'Width'#2'O'#7'Caption'#6#11'Skip Rend'
-  +'er'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#8#0#0#9'TCheckBox'#12'chk'
-  +'SkipSound'#4'Left'#2#9#6'Height'#2#19#3'Top'#2'`'#5'Width'#2'K'#7'Caption'#6
-  ,#10'Skip Sound'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#9#0#0#9'TCheck'
-  +'Box'#7'chkUIDs'#4'Left'#2'\'#6'Height'#2#19#3'Top'#2'P'#5'Width'#2'D'#7'Cap'
-  +'tion'#6#9'UIDs by T'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#10#0#0#9
-  +'TCheckBox'#18'chkSelectedObjInfo'#4'Left'#2'\'#6'Height'#2#19#3'Top'#2'`'#5
-  +'Width'#2'U'#7'Caption'#6#14'Selection Info'#7'OnClick'#7#14'ControlsUpdate'
-  +#8'TabOrder'#2#11#0#0#9'TCheckBox'#10'chkShowFPS'#4'Left'#2'\'#6'Height'#2#19
-  +#3'Top'#2'@'#5'Width'#2'('#7'Caption'#6#3'FPS'#7'OnClick'#7#14'ControlsUpdat'
-  +'e'#8'TabOrder'#2#12#0#0#9'TCheckBox'#8'chkHands'#4'Left'#2#9#6'Height'#2#19
-  +#3'Top'#2'p'#5'Width'#2'3'#7'Caption'#6#5'Hands'#7'OnClick'#7#14'ControlsUpd'
-  +'ate'#8'TabOrder'#2#13#0#0#7'TButton'#11'btnUpdateUI'#4'Left'#2'\'#6'Height'
-  +#2#17#3'Top'#2'r'#5'Width'#2'O'#7'Caption'#6#9'Update UI'#7'OnClick'#7#21'Bu'
-  +'tton_UpdateUI_Click'#8'TabOrder'#2#14#0#0#0#9'TGroupBox'#12'GroupBoxLogs'#4
-  +'Left'#2#8#6'Height'#3#180#0#3'Top'#3'h'#2#5'Width'#3#177#0#7'Caption'#6#4'L'
-  +'ogs'#12'ClientHeight'#3#162#0#11'ClientWidth'#3#173#0#8'TabOrder'#2#6#0#9'T'
-  +'CheckBox'#14'chkLogDelivery'#4'Left'#2#9#6'Height'#2#19#3'Top'#2#0#5'Width'
-  +#2':'#7'Caption'#6#8'Delivery'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2
-  +#0#0#0#9'TCheckBox'#19'chkLogNetConnection'#4'Left'#2#8#6'Height'#2#19#3'Top'
-  +#2#16#5'Width'#2']'#7'Caption'#6#14'Net connection'#7'Checked'#9#7'OnClick'#7
-  +#14'ControlsUpdate'#5'State'#7#9'cbChecked'#8'TabOrder'#2#1#0#0#11'TRadioGro'
-  +'up'#15'RGLogNetPackets'#4'Left'#2#4#6'Height'#2'X'#3'Top'#2'4'#5'Width'#3
-  +#161#0#8'AutoFill'#9#7'Caption'#6#21'Net packets log level'#28'ChildSizing.L'
-  +'eftRightSpacing'#2#6#29'ChildSizing.EnlargeHorizontal'#7#24'crsHomogenousCh'
-  +'ildResize'#27'ChildSizing.EnlargeVertical'#7#24'crsHomogenousChildResize'#28
-  +'ChildSizing.ShrinkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVer'
-  +'tical'#7#14'crsScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenT'
-  +'opToBottom'#27'ChildSizing.ControlsPerLine'#2#1#12'ClientHeight'#2'F'#11'Cl'
-  +'ientWidth'#3#157#0#9'ItemIndex'#2#0#13'Items.Strings'#1#6#5'None '#6#25'All'
-  +' but commands/ping/fps'#6#16'All but ping/fps'#6#11'All packets'#0#7'OnClic'
-  +'k'#7#14'ControlsUpdate'#8'TabOrder'#2#2#0#0#9'TCheckBox'#17'chkLogsShowInCh'
-  +'at'#4'Left'#2#9#6'Height'#2#19#3'Top'#3#140#0#5'Width'#2'{'#7'Caption'#6#20
-  +'Show logs in MP chat'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'#2#3#0#0#9
-  +'TCheckBox'#14'chkLogCommands'#4'Left'#2'e'#6'Height'#2#19#3'Top'#2#0#5'Widt'
-  +'h'#2'H'#7'Caption'#6#8'Commands'#7'OnClick'#7#14'ControlsUpdate'#8'TabOrder'
-  +#2#4#0#0#9'TCheckBox'#15'chkLogRngChecks'#4'Left'#2'e'#6'Height'#2#19#3'Top'
-  +#2#16#5'Width'#2'L'#7'Caption'#6#9'RngChecks'#7'OnClick'#7#14'ControlsUpdate'
-  +#8'TabOrder'#2#5#0#0#9'TCheckBox'#14'chkLogGameTick'#4'Left'#2#9#6'Height'#2
-  +#19#3'Top'#2' '#5'Width'#2'D'#7'Caption'#6#9'Game tick'#7'OnClick'#7#14'Cont'
-  +'rolsUpdate'#8'TabOrder'#2#6#0#0#0#0#11'TOpenDialog'#11'OpenDialog1'#10'Init'
-  +'ialDir'#6#1'.'#7'Options'#11#14'ofHideReadOnly'#15'ofFileMustExist'#14'ofEn'
-  +'ableSizing'#0#4'Left'#2'P'#3'Top'#2#8#0#0#9'TMainMenu'#9'MainMenu1'#4'Left'
-  +#2#16#3'Top'#2#8#0#9'TMenuItem'#5'File1'#7'Caption'#6#4'File'#0#9'TMenuItem'
-  +#15'OpenMissionMenu'#7'Caption'#6#16'Start mission...'#7'OnClick'#7#21'Open_'
-  +'MissionMenuClick'#0#0#9'TMenuItem'#9'MenuItem1'#7'Caption'#6#15'Edit missio'
-  +'n...'#7'OnClick'#7#14'MenuItem1Click'#0#0#9'TMenuItem'#20'SaveEditableMissi'
-  +'on1'#7'Caption'#6#24'Save editable mission...'#7'Enabled'#8#7'OnClick'#7#25
-  +'SaveEditableMission1Click'#0#0#9'TMenuItem'#2'N4'#7'Caption'#6#1'-'#0#0#9'T'
-  +'MenuItem'#14'ReloadSettings'#7'Caption'#6#19'Reload settings.ini'#7'OnClick'
-  +#7#19'ReloadSettingsClick'#0#0#9'TMenuItem'#12'SaveSettings'#7'Caption'#6#17
-  +'Save settings.ini'#7'OnClick'#7#17'SaveSettingsClick'#0#0#9'TMenuItem'#2'N1'
-  +#7'Caption'#6#1'-'#0#0#9'TMenuItem'#5'Exit1'#7'Caption'#6#4'Exit'#7'OnClick'
-  +#7#9'ExitClick'#0#0#0#9'TMenuItem'#6'Debug1'#7'Caption'#6#5'Debug'#0#9'TMenu'
-  +'Item'#17'Debug_PrintScreen'#7'Caption'#6#11'PrintScreen'#7'OnClick'#7#22'De'
-  +'bug_PrintScreenClick'#0#0#9'TMenuItem'#15'Debug_ShowPanel'#7'Caption'#6#16
-  +'Show Debug panel'#7'OnClick'#7#20'Debug_ShowPanelClick'#0#0#9'TMenuItem'#14
-  +'ExportMainMenu'#7'Caption'#6#15'Export MainMenu'#7'OnClick'#7#21'Debug_Expo'
-  +'rtMenuClick'#0#0#9'TMenuItem'#18'Debug_EnableCheats'#7'Caption'#6#12'Debug '
-  +'Cheats'#7'OnClick'#7#23'Debug_EnableCheatsClick'#0#0#9'TMenuItem'#13'Export'
-  +'UIPages'#7'Caption'#6#15'Export UI pages'#7'OnClick'#7#24'Debug_ExportUIPag'
-  +'esClick'#0#0#9'TMenuItem'#13'ShowLogistics'#7'Caption'#6#14'Show Logistics'
-  +#7'OnClick'#7#18'ShowLogisticsClick'#0#0#0#9'TMenuItem'#7'Export1'#7'Caption'
-  +#6#11'Export Data'#0#9'TMenuItem'#10'Resources1'#7'Caption'#6#9'Resources'#0
-  +#9'TMenuItem'#13'Export_Fonts1'#7'Caption'#6#5'Fonts'#7'OnClick'#7#18'Export'
-  +'_Fonts1Click'#0#0#9'TMenuItem'#14'Export_Sounds1'#7'Caption'#6#6'Sounds'#7
-  +'OnClick'#7#19'Export_Sounds1Click'#0#0#9'TMenuItem'#6'Other1'#7'Caption'#6#1
-  ,'-'#7'Enabled'#8#0#0#9'TMenuItem'#14'Export_TreesRX'#7'Caption'#6#8'Trees.rx'
-  +#7'OnClick'#7#19'Export_TreesRXClick'#0#0#9'TMenuItem'#15'Export_HousesRX'#7
-  +'Caption'#6#9'Houses.rx'#7'OnClick'#7#20'Export_HousesRXClick'#0#0#9'TMenuIt'
-  +'em'#14'Export_UnitsRX'#7'Caption'#6#8'Units.rx'#7'OnClick'#7#19'Export_Unit'
-  +'sRXClick'#0#0#9'TMenuItem'#12'Export_GUIRX'#7'Caption'#6#6'GUI.rx'#7'OnClic'
-  +'k'#7#15'Export_GUIClick'#0#0#9'TMenuItem'#16'Export_GUIMainRX'#7'Caption'#6
-  +#11'GUI Main.rx'#7'OnClick'#7#21'Export_GUIMainRXClick'#0#0#9'TMenuItem'#13
-  +'Export_Custom'#7'Caption'#6#6'Custom'#7'OnClick'#7#18'Export_CustomClick'#0
-  +#0#9'TMenuItem'#14'Export_Tileset'#7'Caption'#6#7'Tileset'#7'OnClick'#7#19'E'
-  +'xport_TilesetClick'#0#0#0#9'TMenuItem'#9'AnimData1'#7'Caption'#6#1'-'#7'Ena'
-  +'bled'#8#0#0#9'TMenuItem'#16'Export_TreeAnim1'#7'Caption'#6#9'Tree Anim'#7'O'
-  +'nClick'#7#21'Export_TreeAnim1Click'#0#0#9'TMenuItem'#17'Export_HouseAnim1'#7
-  +'Caption'#6#10'House Anim'#7'OnClick'#7#22'Export_HouseAnim1Click'#0#0#9'TMe'
-  +'nuItem'#16'Export_UnitAnim1'#7'Caption'#6#9'Unit Anim'#0#9'TMenuItem'#12'Un'
-  +'itAnim_All'#7'Caption'#6#3'All'#7'OnClick'#7#17'UnitAnim_AllClick'#0#0#9'TM'
-  +'enuItem'#2'N3'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#8'Soldiers'#7'Caption'#6#8
-  +'Soldiers'#7'OnClick'#7#13'SoldiersClick'#0#0#9'TMenuItem'#10'Civilians1'#7
-  +'Caption'#6#9'Civilians'#7'OnClick'#7#15'Civilians1Click'#0#0#0#9'TMenuItem'
-  +#2'N2'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#15'ResourceValues1'#7'Caption'#6#15
-  +'Resource Values'#7'OnClick'#7#20'ResourceValues1Click'#0#0#9'TMenuItem'#20
-  +'Export_Deliverlists1'#7'Caption'#6#13'Deliver lists'#7'OnClick'#7#25'Export'
-  +'_Deliverlists1Click'#0#0#9'TMenuItem'#10'HousesDat1'#7'Caption'#6#10'Houses'
-  +' Dat'#7'OnClick'#7#15'HousesDat1Click'#0#0#9'TMenuItem'#11'ScriptData1'#7'C'
-  +'aption'#6#11'Script Data'#7'OnClick'#7#22'Export_ScriptDataClick'#0#0#9'TMe'
-  +'nuItem'#2'N6'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#9'GameStats'#7'Caption'#6
-  +#15'Game statistics'#0#9'TMenuItem'#15'ExportGameStats'#7'Caption'#6#6'Expor'
-  +'t'#7'Enabled'#8#7'OnClick'#7#20'ExportGameStatsClick'#0#0#9'TMenuItem'#17'V'
-  +'alidateGameStats'#7'Caption'#6#8'Validate'#7'OnClick'#7#22'ValidateGameStat'
-  +'sClick'#0#0#0#0#9'TMenuItem'#6'About1'#7'Caption'#6#7'About..'#7'OnClick'#7
-  +#10'AboutClick'#0#0#0#11'TSaveDialog'#11'SaveDialog1'#4'Left'#3#144#0#3'Top'
-  +#2#8#0#0#0
+  'TPF0'#9'TFormMain'#8'FormMain'#4'Left'#3'i'#2#6'Height'#3'G'#3#3'Top'#3#147#0
+  +#5'Width'#3#9#2#8'HelpType'#7#9'htKeyword'#11'BorderStyle'#7#6'bsNone'#12'Cl'
+  +'ientHeight'#3'G'#3#11'ClientWidth'#3#9#2#5'Color'#7#9'clBtnFace'#10'Font.Co'
+  +'lor'#7#12'clWindowText'#11'Font.Height'#2#245#9'Font.Name'#6#13'MS Sans Ser'
+  +'if'#10'KeyPreview'#9#4'Menu'#7#9'MainMenu1'#7'OnClose'#7#9'FormClose'#12'On'
+  +'CloseQuery'#7#14'FormCloseQuery'#8'OnCreate'#7#10'FormCreate'#9'OnDestroy'#7
+  +#11'FormDestroy'#9'OnKeyDown'#7#11'FormKeyDown'#10'OnKeyPress'#7#12'FormKeyP'
+  +'ress'#7'OnKeyUp'#7#9'FormKeyUp'#12'OnMouseWheel'#7#14'FormMouseWheel'#6'OnS'
+  +'how'#7#8'FormShow'#10'LCLVersion'#6#7'3.4.0.0'#6'Scaled'#8#0#10'TStatusBar'
+  +#10'StatusBar1'#4'Left'#2#0#6'Height'#2#21#3'Top'#3'2'#3#5'Width'#3#9#2#6'Pa'
+  +'nels'#14#1#4'Text'#6'/KMR r7000+ / OpenGL 4.0.0 - Build 9.99.99.99999'#5'Wi'
+  +'dth'#3#19#1#0#1#4'Text'#6#17'Map size: 999x999'#5'Width'#2'n'#0#1#4'Text'#6
+  +#17'Cursor: 1999:1999'#5'Width'#2'i'#0#1#4'Text'#6#27'Tile: 999.9:999.9 [999'
+  +':999]'#5'Width'#3#140#0#0#1#4'Text'#6#14'Time: 99:99:99'#5'Width'#2'Z'#0#1#4
+  +'Text'#6#15'999.9 FPS (999)'#5'Width'#2'U'#0#1#4'Text'#6#13'Obj: 99999999'#5
+  +'Width'#2'Z'#0#1#4'Text'#6#16'Control ID: 9999'#5'Width'#2'P'#0#0#0#0#9'TGro'
+  +'upBox'#9'mainGroup'#4'Left'#3#5#1#6'Height'#3'2'#3#3'Top'#2#0#5'Width'#3#4#1
+  +#5'Align'#7#7'alRight'#12'ClientHeight'#3'0'#3#11'ClientWidth'#3#2#1#14'Doub'
+  +'leBuffered'#8#16'ParentBackground'#8#20'ParentDoubleBuffered'#8#8'TabOrder'
+  +#2#1#0#10'TMyRollOut'#6'cpMisc'#4'Left'#2#0#6'Height'#2#24#3'Top'#3#129#1#5
+  +'Width'#3#200#0#7'Caption'#6#4'Misc'#12'ClientHeight'#2#24#11'ClientWidth'#3
+  +#200#0#7'Enabled'#9#16'ParentBackground'#8#8'TabOrder'#2#0#12'CollapseKind'#7
+  +#5'akTop'#12'ExpandedSize'#3#200#0#14'ButtonPosition'#7#5'akTop'#10'ButtonSi'
+  +'ze'#2#27#11'Button.Left'#2#0#13'Button.Height'#2#27#10'Button.Top'#2#0#12'B'
+  +'utton.Width'#3#200#0#14'Button.Caption'#6#7'Caption'#12'Button.Color'#7#9'c'
+  +'lSkyBlue'#20'Button.ColorExpanded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0
+  +#0#0#0#0#160#3'@'#9'Collapsed'#9#8'OnExpand'#7#17'cpCollapseChanged'#10'OnCo'
+  +'llapse'#7#17'cpCollapseChanged'#0#9'TCheckBox'#8'chkBevel'#4'Left'#3#168#0#6
+  +'Height'#2#23#3'Top'#2'd'#5'Width'#2'6'#7'Caption'#6#5'Bevel'#7'Checked'#9#5
+  +'State'#7#9'cbChecked'#8'TabOrder'#2#0#7'OnClick'#7#14'ControlsUpdate'#0#0#11
+  +'TRadioGroup'#11'rgDebugFont'#4'Left'#2#8#6'Height'#2'U'#3'Top'#2#8#5'Width'
+  +#3#209#0#8'AutoFill'#9#7'Caption'#6#10'Debug Font'#28'ChildSizing.LeftRightS'
+  +'pacing'#2#6#29'ChildSizing.EnlargeHorizontal'#7#24'crsHomogenousChildResize'
+  +#27'ChildSizing.EnlargeVertical'#7#24'crsHomogenousChildResize'#28'ChildSizi'
+  +'ng.ShrinkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7
+  +#14'crsScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenTopToBotto'
+  +'m'#27'ChildSizing.ControlsPerLine'#2#2#12'ClientHeight'#2'D'#11'ClientWidth'
+  +#3#207#0#7'Columns'#2#2#9'ItemIndex'#2#7#13'Items.Strings'#1#6#10'fntAntiqua'
+  +#6#7'fntGame'#6#7'fntGrey'#6#8'fntMetal'#6#7'fntMini'#6#10'fntOutline'#6#8'f'
+  +'ntArial'#6#13'fntMonospaced'#0#7'OnClick'#7#14'ControlsUpdate'#6'OnExit'#7
+  +#14'radioGroupExit'#16'ParentBackground'#8#8'TabOrder'#2#1#0#0#0#10'TMyRollO'
+  +'ut'#6'cpLogs'#4'Left'#2#0#6'Height'#2#24#3'Top'#3'i'#1#5'Width'#3#200#0#7'C'
+  +'aption'#6#4'Logs'#12'ClientHeight'#2#24#11'ClientWidth'#3#200#0#7'Enabled'#9
+  +#16'ParentBackground'#8#8'TabOrder'#2#1#12'CollapseKind'#7#5'akTop'#12'Expan'
+  +'dedSize'#3#200#0#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'#2#27#11'Butto'
+  +'n.Left'#2#0#13'Button.Height'#2#27#10'Button.Top'#2#0#12'Button.Width'#3#200
+  +#0#14'Button.Caption'#6#7'Caption'#12'Button.Color'#7#9'clSkyBlue'#20'Button'
+  +'.ColorExpanded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0#0#160#3'@'#9
+  +'Collapsed'#9#8'OnExpand'#7#17'cpCollapseChanged'#10'OnCollapse'#7#17'cpColl'
+  +'apseChanged'#0#9'TCheckBox'#14'chkLogCommands'#4'Left'#2'x'#6'Height'#2#23#3
+  +'Top'#2#8#5'Width'#2'i'#7'Caption'#6#12'GIP commands'#8'TabOrder'#2#0#7'OnCl'
+  +'ick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#14'chkLogDelivery'#4'Left'#2#8#6
+  +'Height'#2#23#3'Top'#2#8#5'Width'#2'E'#7'Caption'#6#8'Delivery'#8'TabOrder'#2
+  +#1#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#14'chkLogGameTick'#4'Lef'
+  +'t'#2#8#6'Height'#2#23#3'Top'#2'('#5'Width'#2'M'#7'Caption'#6#9'Game tick'#8
+  +'TabOrder'#2#2#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#19'chkLogNet'
+  +'Connection'#4'Left'#2#8#6'Height'#2#23#3'Top'#2#24#5'Width'#2'i'#7'Caption'
+  +#6#14'Net connection'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#3#7
+  +'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#15'chkLogRngChecks'#4'Left'#2
+  +'x'#6'Height'#2#23#3'Top'#2'('#5'Width'#2'm'#7'Caption'#6#13'Random Checks'#8
+  +'TabOrder'#2#4#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#16'chkLogSho'
+  +'wInChat'#4'Left'#2#8#6'Height'#2#23#3'Top'#3#138#0#5'Width'#3#137#0#7'Capti'
+  +'on'#6#20'Show logs in MP chat'#8'TabOrder'#2#5#7'OnClick'#7#14'ControlsUpda'
+  +'te'#0#0#11'TRadioGroup'#15'RGLogNetPackets'#4'Left'#2#8#6'Height'#2'N'#3'To'
+  ,'p'#2':'#5'Width'#3#161#0#8'AutoFill'#9#7'Caption'#6#21'Net packets log leve'
+  +'l'#28'ChildSizing.LeftRightSpacing'#2#6#29'ChildSizing.EnlargeHorizontal'#7
+  +#24'crsHomogenousChildResize'#27'ChildSizing.EnlargeVertical'#7#24'crsHomoge'
+  +'nousChildResize'#28'ChildSizing.ShrinkHorizontal'#7#14'crsScaleChilds'#26'C'
+  +'hildSizing.ShrinkVertical'#7#14'crsScaleChilds'#18'ChildSizing.Layout'#7#29
+  +'cclLeftToRightThenTopToBottom'#27'ChildSizing.ControlsPerLine'#2#1#12'Clien'
+  +'tHeight'#2'='#11'ClientWidth'#3#159#0#9'ItemIndex'#2#0#13'Items.Strings'#1#6
+  +#5'None '#6#25'All but commands/ping/fps'#6#16'All but ping/fps'#6#11'All pa'
+  +'ckets'#0#7'OnClick'#7#14'ControlsUpdate'#6'OnExit'#7#14'radioGroupExit'#16
+  +'ParentBackground'#8#8'TabOrder'#2#6#0#0#9'TCheckBox'#17'chkLogSkipTempCmd'#4
+  +'Left'#2'x'#6'Height'#2#23#3'Top'#2#24#5'Width'#3#138#0#7'Caption'#6#18'Skip'
+  +' temp commands'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#7#7'OnCl'
+  +'ick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#15'chkLogShowInGUI'#4'Left'#2#8#6
+  +'Height'#2#23#3'Top'#3#156#0#5'Width'#2's'#7'Caption'#6#16'Show logs in GUI'
+  +#8'TabOrder'#2#8#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#18'chkLogU'
+  +'pdateForGUI'#4'Left'#2'x'#6'Height'#2#23#3'Top'#3#156#0#5'Width'#2'~'#7'Cap'
+  +'tion'#6#18'Update log for GUI'#8'TabOrder'#2#9#7'OnClick'#7#14'ControlsUpda'
+  +'te'#0#0#0#10'TMyRollOut'#15'cpGraphicTweaks'#4'Left'#2#0#6'Height'#2#24#3'T'
+  +'op'#3'Q'#1#5'Width'#3#200#0#7'Caption'#6#14'Graphic tweaks'#12'ClientHeight'
+  +#2#24#11'ClientWidth'#3#200#0#14'DoubleBuffered'#9#7'Enabled'#9#16'ParentBac'
+  +'kground'#8#20'ParentDoubleBuffered'#8#8'TabOrder'#2#2#12'CollapseKind'#7#5
+  +'akTop'#12'ExpandedSize'#3#200#0#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'
+  +#2#27#11'Button.Left'#2#0#13'Button.Height'#2#27#10'Button.Top'#2#0#12'Butto'
+  +'n.Width'#3#200#0#14'Button.Caption'#6#7'Caption'#12'Button.Color'#7#9'clSky'
+  +'Blue'#20'Button.ColorExpanded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0
+  +#0#0#160#3'@'#9'Collapsed'#9#8'OnExpand'#7#17'cpCollapseChanged'#10'OnCollap'
+  +'se'#7#17'cpCollapseChanged'#0#6'TLabel'#6'Label1'#4'Left'#2'e'#6'Height'#2
+  +#16#3'Top'#2'7'#5'Width'#2'E'#7'Caption'#6#13'Building step'#0#0#6'TLabel'#6
+  +'Label3'#4'Left'#2'e'#6'Height'#2#16#3'Top'#2#7#5'Width'#2#30#7'Caption'#6#5
+  +'Angle'#0#0#6'TLabel'#6'Label4'#4'Left'#2'e'#6'Height'#2#16#3'Top'#2#23#5'Wi'
+  +'dth'#2#30#7'Caption'#6#5'Angle'#0#0#6'TLabel'#6'Label7'#4'Left'#2'e'#6'Heig'
+  +'ht'#2#16#3'Top'#2''''#5'Width'#2#30#7'Caption'#6#5'Angle'#0#0#6'TLabel'#13
+  +'lblWaterLight'#4'Left'#2'e'#6'Height'#2#16#3'Top'#2'J'#5'Width'#2':'#7'Capt'
+  +'ion'#6#11'Water light'#0#0#9'TTrackBar'#8'tbAngleX'#4'Left'#2#5#6'Height'#2
+  +#30#3'Top'#2#7#5'Width'#2'_'#9'Frequency'#2#5#3'Max'#2'Z'#3'Min'#2#166#8'OnC'
+  +'hange'#7#14'ControlsUpdate'#8'PageSize'#2#5#8'Position'#2#0#9'TickMarks'#7#6
+  +'tmBoth'#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2#0#0#0#9'TTrackBar'#8'tbAngle'
+  +'Y'#4'Left'#2#5#6'Height'#2#30#3'Top'#2#23#5'Width'#2'_'#9'Frequency'#2#5#3
+  +'Max'#2'Z'#3'Min'#2#166#8'OnChange'#7#14'ControlsUpdate'#8'PageSize'#2#5#8'P'
+  +'osition'#2#0#9'TickMarks'#7#6'tmBoth'#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2
+  +#1#0#0#9'TTrackBar'#8'tbAngleZ'#4'Left'#2#2#6'Height'#2#30#3'Top'#2'*'#5'Wid'
+  +'th'#2'_'#9'Frequency'#2#5#3'Max'#2'Z'#3'Min'#2#166#8'OnChange'#7#14'Control'
+  +'sUpdate'#8'PageSize'#2#5#8'Position'#2#0#9'TickMarks'#7#6'tmBoth'#9'TickSty'
+  +'le'#7#6'tsNone'#8'TabOrder'#2#2#0#0#9'TTrackBar'#14'tbBuildingStep'#4'Left'
+  +#2#5#6'Height'#2#30#3'Top'#2'7'#5'Width'#2'_'#3'Max'#2'd'#8'OnChange'#7#14'C'
+  +'ontrolsUpdate'#8'Position'#2#0#9'TickMarks'#7#6'tmBoth'#9'TickStyle'#7#6'ts'
+  +'None'#8'TabOrder'#2#3#0#0#9'TCheckBox'#13'chkSnowHouses'#4'Left'#2#8#6'Heig'
+  +'ht'#2#23#3'Top'#2']'#5'Width'#2'^'#7'Caption'#6#11'Snow houses'#8'TabOrder'
+  +#2#4#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#21'chkInterpolatedRend'
+  +'er'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'm'#5'Width'#3#130#0#7'Caption'#6#19
+  +'Interpolated render'#8'TabOrder'#2#5#7'OnClick'#7#14'ControlsUpdate'#0#0#9
+  +'TTrackBar'#12'tbWaterLight'#4'Left'#2#5#6'Height'#2#30#3'Top'#2'J'#5'Width'
+  +#2'_'#3'Max'#3#200#0#8'OnChange'#7#14'ControlsUpdate'#8'Position'#3#130#0#9
+  +'TickMarks'#7#6'tmBoth'#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2#6#0#0#9'TChec'
+  +'kBox'#20'chkInterpolatedAnims'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'}'#5'Wid'
+  +'th'#3#153#0#7'Caption'#6#23'Interpolated animations'#8'TabOrder'#2#7#7'OnCl'
+  +'ick'#7#14'ControlsUpdate'#0#0#0#10'TMyRollOut'#14'cpUserInreface'#4'Left'#2
+  +#0#6'Height'#2#24#3'Top'#3'9'#1#5'Width'#3#200#0#7'Caption'#6#14'User Interf'
+  +'ace'#12'ClientHeight'#2#24#11'ClientWidth'#3#200#0#7'Enabled'#9#16'ParentBa'
+  +'ckground'#8#8'TabOrder'#2#3#12'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3
+  +#200#0#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'#2#27#11'Button.Left'#2#0
+  +#13'Button.Height'#2#27#10'Button.Top'#2#0#12'Button.Width'#3#200#0#14'Butto'
+  +'n.Caption'#6#7'Caption'#12'Button.Color'#7#9'clSkyBlue'#20'Button.ColorExpa'
+  +'nded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0#0#160#3'@'#9'Collapse'
+  ,'d'#9#8'OnExpand'#7#17'cpCollapseChanged'#10'OnCollapse'#7#17'cpCollapseChan'
+  +'ged'#0#9'TCheckBox'#19'chkUIControlsBounds'#4'Left'#2#8#6'Height'#2#23#3'To'
+  +'p'#2#8#5'Width'#2'q'#7'Caption'#6#15'Controls bounds'#8'TabOrder'#2#0#7'OnC'
+  +'lick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#15'chkUIControlsID'#4'Left'#2'x'
+  +#6'Height'#2#23#3'Top'#2#8#5'Width'#2'Z'#7'Caption'#6#12'Controls IDs'#8'Tab'
+  +'Order'#2#1#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#15'chkUITextBou'
+  +'nds'#4'Left'#2'x'#6'Height'#2#23#3'Top'#2#24#5'Width'#2'Z'#7'Caption'#6#11
+  +'Text bounds'#8'TabOrder'#2#2#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBo'
+  +'x'#19'chkUIFocusedControl'#4'Left'#2#8#6'Height'#2#23#3'Top'#2#24#5'Width'#2
+  +'m'#7'Caption'#6#15'Focused control'#8'TabOrder'#2#3#7'OnClick'#7#14'Control'
+  +'sUpdate'#0#0#9'TCheckBox'#16'chkUIControlOver'#4'Left'#2#8#6'Height'#2#23#3
+  +'Top'#2'('#5'Width'#3#129#0#7'Caption'#6#18'Control mouse over'#8'TabOrder'#2
+  +#4#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#17'chkSkipRenderText'#4
+  +'Left'#2'x'#6'Height'#2#23#3'Top'#2''''#5'Width'#2'm'#7'Caption'#6#16'Skip r'
+  +'ender text'#8'TabOrder'#2#5#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'
+  +#20'chkCursorCoordinates'#4'Left'#2#9#6'Height'#2#23#3'Top'#2'G'#5'Width'#2
+  +'~'#7'Caption'#6#18'Cursor coordinates'#8'TabOrder'#2#6#7'OnClick'#7#14'Cont'
+  +'rolsUpdate'#0#0#0#10'TMyRollOut'#10'cpPerfLogs'#4'Left'#2#0#6'Height'#2#24#3
+  +'Top'#3'!'#1#5'Width'#3#200#0#7'Caption'#6#9'Perf Logs'#12'ClientHeight'#2#24
+  +#11'ClientWidth'#3#200#0#7'Enabled'#9#16'ParentBackground'#8#8'TabOrder'#2#4
+  +#12'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3#200#0#14'ButtonPosition'#7#5
+  +'akTop'#10'ButtonSize'#2#27#11'Button.Left'#2#0#13'Button.Height'#2#27#10'Bu'
+  +'tton.Top'#2#0#12'Button.Width'#3#200#0#14'Button.Caption'#6#7'Caption'#12'B'
+  +'utton.Color'#7#9'clSkyBlue'#20'Button.ColorExpanded'#4#23#136#248#0#14'Anim'
+  +'ationSpeed'#5#0#0#0#0#0#0#0#160#3'@'#9'Collapsed'#9#8'OnExpand'#7#17'cpColl'
+  +'apseChanged'#10'OnCollapse'#7#17'cpCollapseChanged'#0#0#10'TMyRollOut'#4'cp'
+  +'AI'#4'Left'#2#0#6'Height'#2#24#3'Top'#3#9#1#5'Width'#3#200#0#7'Caption'#6#2
+  +'AI'#12'ClientHeight'#2#24#11'ClientWidth'#3#200#0#7'Enabled'#9#16'ParentBac'
+  +'kground'#8#8'TabOrder'#2#5#12'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3
+  +#200#0#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'#2#27#11'Button.Left'#2#0
+  +#13'Button.Height'#2#27#10'Button.Top'#2#0#12'Button.Width'#3#200#0#14'Butto'
+  +'n.Caption'#6#7'Caption'#12'Button.Color'#7#9'clSkyBlue'#20'Button.ColorExpa'
+  +'nded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0#0#160#3'@'#9'Collapse'
+  +'d'#9#8'OnExpand'#7#17'cpCollapseChanged'#10'OnCollapse'#7#17'cpCollapseChan'
+  +'ged'#0#6'TLabel'#6'Label5'#4'Left'#3#202#0#6'Height'#2#16#3'Top'#2'o'#5'Wid'
+  +'th'#2'%'#7'Caption'#6#6'Margin'#7'Visible'#8#0#0#6'TLabel'#6'Label6'#4'Left'
+  +#3#202#0#6'Height'#2#16#3'Top'#3#134#0#5'Width'#2'4'#7'Caption'#6#9'Threshol'
+  +'d'#7'Visible'#8#0#0#9'TCheckBox'#8'chkAIEye'#4'Left'#2'x'#6'Height'#2#23#3
+  +'Top'#2'9'#5'Width'#2','#7'Caption'#6#3'Eye'#8'TabOrder'#2#0#7'OnClick'#7#14
+  +'ControlsUpdate'#0#0#9'TCheckBox'#8'chkBuild'#4'Left'#2'x'#6'Height'#2#23#3
+  +'Top'#2')'#5'Width'#2'5'#7'Caption'#6#5'Build'#8'TabOrder'#2#1#7'OnClick'#7
+  +#14'ControlsUpdate'#0#0#9'TCheckBox'#9'chkCombat'#4'Left'#2#8#6'Height'#2#23
+  +#3'Top'#2')'#5'Width'#2'C'#7'Caption'#6#6'Combat'#8'TabOrder'#2#2#7'OnClick'
+  +#7#14'ControlsUpdate'#0#0#9'TCheckBox'#12'chkShowAvoid'#4'Left'#2'x'#6'Heigh'
+  +'t'#2#23#3'Top'#2#25#5'Width'#2'g'#7'Caption'#6#14'Avoid building'#8'TabOrde'
+  +'r'#2#3#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#14'chkShowBalance'#4
+  +'Left'#2'x'#6'Height'#2#23#3'Top'#2#8#5'Width'#2'B'#7'Caption'#6#7'Balance'#8
+  +'TabOrder'#2#4#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#15'chkShowDe'
+  +'fences'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'K'#5'Width'#2'I'#7'Caption'#6#8
+  +'Defences'#8'TabOrder'#2#5#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'
+  +#16'chkShowEyeRoutes'#4'Left'#3#184#0#6'Height'#2#23#3'Top'#2'X'#5'Width'#2
+  +'>'#7'Caption'#6#6'Routes'#8'TabOrder'#2#6#7'OnClick'#7#14'ControlsUpdate'#0
+  +#0#9'TCheckBox'#15'chkShowFlatArea'#4'Left'#3#184#0#6'Height'#2#23#3'Top'#2
+  +'I'#5'Width'#2'F'#7'Caption'#6#9'Flat area'#8'TabOrder'#2#7#7'OnClick'#7#14
+  +'ControlsUpdate'#0#0#9'TCheckBox'#14'chkShowNavMesh'#4'Left'#2#8#6'Height'#2
+  +#23#3'Top'#2#8#5'Width'#2'J'#7'Caption'#6#7'Navmesh'#8'TabOrder'#2#8#7'OnCli'
+  +'ck'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#16'chkShowOwnership'#4'Left'#2#8#6
+  +'Height'#2#23#3'Top'#2#24#5'Width'#2'T'#7'Caption'#6#9'Ownership'#8'TabOrder'
+  +#2#9#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#11'chkShowSoil'#4'Left'
+  +#3#184#0#6'Height'#2#23#3'Top'#2'9'#5'Width'#2'-'#7'Caption'#6#4'Soil'#8'Tab'
+  +'Order'#2#10#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TTrackBar'#11'tbOwnMargin'
+  +#4'Left'#2'g'#6'Height'#2#30#3'Top'#2'o'#5'Width'#2'e'#3'Max'#3#255#0#3'Min'
+  +#2'@'#8'OnChange'#7#14'ControlsUpdate'#8'Position'#2'@'#9'TickMarks'#7#6'tmB'
+  +'oth'#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2#11#7'Visible'#8#0#0#9'TTrackBar'
+  ,#11'tbOwnThresh'#4'Left'#2'g'#6'Height'#2#30#3'Top'#3#134#0#5'Width'#2'e'#3
+  +'Max'#3#255#0#3'Min'#2'@'#8'OnChange'#7#14'ControlsUpdate'#8'Position'#2'@'#9
+  +'TickMarks'#7#6'tmBoth'#9'TickStyle'#7#6'tsNone'#8'TabOrder'#2#12#7'Visible'
+  +#8#0#0#9'TCheckBox'#13'chkSupervisor'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'i'
+  +#5'Width'#2'S'#7'Caption'#6#10'Supervisor'#8'TabOrder'#2#13#7'OnClick'#7#14
+  +'ControlsUpdate'#0#0#9'TCheckBox'#22'chkShowDefencesAnimate'#4'Left'#2#25#6
+  +'Height'#2#23#3'Top'#2'Y'#5'Width'#2'E'#7'Caption'#6#7'Animate'#8'TabOrder'#2
+  +#14#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#27'chkShowArmyVectorFie'
+  +'ldEnemy'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'y'#5'Width'#2'}'#7'Caption'#6
+  +#18'Vector Field Enemy'#8'TabOrder'#2#15#7'OnClick'#7#14'ControlsUpdate'#0#0
+  +#9'TCheckBox'#15'chkShowClusters'#4'Left'#2#8#6'Height'#2#23#3'Top'#3#136#0#5
+  +'Width'#2'D'#7'Caption'#6#8'Clusters'#8'TabOrder'#2#16#7'OnClick'#7#14'Contr'
+  +'olsUpdate'#0#0#9'TCheckBox'#19'chkShowAlliedGroups'#4'Left'#2#8#6'Height'#2
+  +#23#3'Top'#3#151#0#5'Width'#2'`'#7'Caption'#6#13'Allied Groups'#8'TabOrder'#2
+  +#17#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#14'chkPathfinding'#4'Le'
+  +'ft'#2#25#6'Height'#2#23#3'Top'#2':'#5'Width'#2'X'#7'Caption'#6#11'Pathfindi'
+  +'ng'#8'TabOrder'#2#18#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#26'ch'
+  +'kShowArmyVectorFieldAlly'#4'Left'#2'x'#6'Height'#2#23#3'Top'#2'y'#5'Width'#2
+  +'m'#7'Caption'#6#17'Vector Field Ally'#8'TabOrder'#2#19#7'OnClick'#7#14'Cont'
+  +'rolsUpdate'#0#0#9'TSpinEdit'#18'seHighlightNavMesh'#4'Left'#2'E'#6'Height'#2
+  +'!'#3'Top'#2#5#5'Width'#2'-'#8'MaxValue'#4#127#150#152#0#8'OnChange'#7#14'Co'
+  +'ntrolsUpdate'#8'TabOrder'#2#20#0#0#0#10'TMyRollOut'#11'cpScripting'#4'Left'
+  +#2#0#6'Height'#2#24#3'Top'#3#241#0#5'Width'#3#200#0#7'Caption'#6#9'Scripting'
+  +#12'ClientHeight'#2#24#11'ClientWidth'#3#200#0#7'Enabled'#9#16'ParentBackgro'
+  +'und'#8#8'TabOrder'#2#6#12'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3#200#0
+  +#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'#2#27#11'Button.Left'#2#0#13'Bu'
+  +'tton.Height'#2#27#10'Button.Top'#2#0#12'Button.Width'#3#200#0#14'Button.Cap'
+  +'tion'#6#7'Caption'#12'Button.Color'#7#9'clSkyBlue'#20'Button.ColorExpanded'
+  +#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0#0#160#3'@'#9'Collapsed'#9#8
+  +'OnExpand'#7#17'cpCollapseChanged'#10'OnCollapse'#7#17'cpCollapseChanged'#0#9
+  +'TCheckBox'#17'chkDebugScripting'#4'Left'#2#8#6'Height'#2#23#4'Hint'#6'XShow'
+  +' exect error position (col/row/module), but significantly slow down script '
+  +'execution'#3'Top'#2#8#5'Width'#2'r'#7'Caption'#6#16'Debug Scripting '#14'Pa'
+  +'rentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#0#7'OnClick'#7#14'ControlsUpdat'
+  +'e'#0#0#0#10'TMyRollOut'#12'cpDebugInput'#4'Left'#2#0#6'Height'#2#24#3'Top'#3
+  +#217#0#5'Width'#3#200#0#7'Caption'#6#11'Debug Input'#12'ClientHeight'#2#24#11
+  +'ClientWidth'#3#200#0#7'Enabled'#9#16'ParentBackground'#8#8'TabOrder'#2#7#12
+  +'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3#200#0#14'ButtonPosition'#7#5'ak'
+  +'Top'#10'ButtonSize'#2#27#11'Button.Left'#2#0#13'Button.Height'#2#27#10'Butt'
+  +'on.Top'#2#0#12'Button.Width'#3#200#0#14'Button.Caption'#6#7'Caption'#12'But'
+  +'ton.Color'#7#9'clSkyBlue'#20'Button.ColorExpanded'#4#23#136#248#0#14'Animat'
+  +'ionSpeed'#5#0#0#0#0#0#0#0#160#3'@'#9'Collapsed'#9#8'OnExpand'#7#17'cpCollap'
+  +'seChanged'#10'OnCollapse'#7#17'cpCollapseChanged'#0#9'TGroupBox'#14'gbFindO'
+  +'bjByUID'#4'Left'#2#8#6'Height'#2'['#3'Top'#2#28#5'Width'#3#225#0#7'Caption'
+  +#6#18'Find object by UID'#12'ClientHeight'#2'J'#11'ClientWidth'#3#223#0#7'En'
+  +'abled'#8#16'ParentBackground'#8#8'TabOrder'#2#0#0#6'TLabel'#7'Label14'#4'Le'
+  +'ft'#2#8#6'Height'#2#16#3'Top'#2'+'#5'Width'#2'N'#7'Caption'#6#14'Selected G'
+  +'/U/H'#0#0#6'TLabel'#7'Label15'#4'Left'#2'p'#6'Height'#2#16#3'Top'#2','#5'Wi'
+  +'dth'#2'W'#7'Caption'#6#16'Selected Warrior'#0#0#6'TLabel'#7'Label13'#4'Left'
+  +#2'V'#6'Height'#2#16#3'Top'#2#19#5'Width'#2#23#7'Caption'#6#4'UID:'#0#0#9'TS'
+  +'pinEdit'#14'seFindObjByUID'#4'Left'#2'p'#6'Height'#2'!'#3'Top'#2#16#5'Width'
+  +#2'a'#8'MaxValue'#4#255#255#255#127#8'OnChange'#7#14'ControlsUpdate'#8'TabOr'
+  +'der'#2#0#0#0#7'TButton'#14'btFindObjByUID'#4'Left'#2#8#6'Height'#2#20#3'Top'
+  +#2#16#5'Width'#2'<'#7'Caption'#6#4'Find'#8'TabOrder'#2#1#7'OnClick'#7#19'btF'
+  +'indObjByUIDClick'#0#0#9'TSpinEdit'#11'seEntityUID'#4'Left'#2#8#6'Height'#2
+  +'!'#3'Top'#2'>'#5'Width'#2'Z'#8'MaxValue'#4#255#255#255#127#8'MinValue'#4#0#0
+  +#0#128#8'OnChange'#7#14'ControlsUpdate'#8'TabOrder'#2#2#0#0#9'TSpinEdit'#12
+  +'seWarriorUID'#4'Left'#2'p'#6'Height'#2'!'#3'Top'#2'?'#5'Width'#2'a'#8'MaxVa'
+  +'lue'#4#255#255#255#127#8'MinValue'#4#0#0#0#128#8'OnChange'#7#14'ControlsUpd'
+  +'ate'#8'TabOrder'#2#3#0#0#0#9'TGroupBox'#9'GroupBox2'#4'Left'#2#8#6'Height'#2
+  +'>'#3'Top'#2'z'#5'Width'#3#225#0#7'Caption'#6#11'Debug input'#12'ClientHeigh'
+  +'t'#2'-'#11'ClientWidth'#3#223#0#16'ParentBackground'#8#8'TabOrder'#2#1#0#6
+  +'TLabel'#7'Label10'#4'Left'#2#8#6'Height'#2#16#3'Top'#2#16#5'Width'#2#28#7'C'
+  +'aption'#6#5'Value'#0#0#6'TLabel'#7'Label11'#4'Left'#2'p'#6'Height'#2#16#3'T'
+  ,'op'#2#16#5'Width'#2#21#7'Caption'#6#4'Text'#0#0#9'TSpinEdit'#12'seDebugValu'
+  +'e'#4'Left'#2#8#6'Height'#2'!'#3'Top'#2' '#5'Width'#2'Z'#8'MaxValue'#4#255
+  +#255#255#127#8'MinValue'#4#0#0#0#128#8'OnChange'#7#14'ControlsUpdate'#7'TabS'
+  +'top'#8#8'TabOrder'#2#0#0#0#5'TEdit'#11'edDebugText'#4'Left'#2'p'#6'Height'#2
+  +'!'#3'Top'#2' '#5'Width'#2'i'#7'TabStop'#8#8'TabOrder'#2#1#8'OnChange'#7#14
+  +'ControlsUpdate'#0#0#0#9'TCheckBox'#15'chkFindObjByUID'#4'Left'#2#8#6'Height'
+  +#2#23#3'Top'#2#6#5'Width'#3#165#0#7'Caption'#6#27'Enable ''Find object by UI'
+  +'D'''#8'TabOrder'#2#2#7'OnClick'#7#14'ControlsUpdate'#0#0#0#10'TMyRollOut'#9
+  +'cpGameAdv'#4'Left'#2#0#6'Height'#2#24#3'Top'#3#193#0#5'Width'#3#200#0#7'Cap'
+  +'tion'#6#15'Game additional'#12'ClientHeight'#2#24#11'ClientWidth'#3#200#0#7
+  +'Enabled'#9#16'ParentBackground'#8#8'TabOrder'#2#8#12'CollapseKind'#7#5'akTo'
+  +'p'#12'ExpandedSize'#3#200#0#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'#2
+  +#27#11'Button.Left'#2#0#13'Button.Height'#2#27#10'Button.Top'#2#0#12'Button.'
+  +'Width'#3#200#0#14'Button.Caption'#6#7'Caption'#12'Button.Color'#7#9'clSkyBl'
+  +'ue'#20'Button.ColorExpanded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0
+  +#0#160#3'@'#9'Collapsed'#9#8'OnExpand'#7#17'cpCollapseChanged'#10'OnCollapse'
+  +#7#17'cpCollapseChanged'#0#9'TCheckBox'#17'chkLoadUnsupSaves'#4'Left'#2#12#6
+  +'Height'#2#23#3'Top'#2#8#5'Width'#3#183#0#7'Caption'#6#28'Allow load unsuppo'
+  +'rted saves'#8'TabOrder'#2#0#7'OnClick'#7#14'ControlsUpdate'#0#0#11'TRadioGr'
+  +'oup'#8'RGPlayer'#4'Left'#2#8#6'Height'#2'K'#3'Top'#2#30#5'Width'#3#225#0#8
+  +'AutoFill'#9#7'Caption'#6#15' Select player '#28'ChildSizing.LeftRightSpacin'
+  +'g'#2#6#29'ChildSizing.EnlargeHorizontal'#7#24'crsHomogenousChildResize'#27
+  +'ChildSizing.EnlargeVertical'#7#24'crsHomogenousChildResize'#28'ChildSizing.'
+  +'ShrinkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7#14
+  +'crsScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenTopToBottom'
+  +#27'ChildSizing.ControlsPerLine'#2#6#12'ClientHeight'#2':'#11'ClientWidth'#3
+  +#223#0#7'Columns'#2#6#9'ItemIndex'#2#0#13'Items.Strings'#1#6#1'1'#6#1'2'#6#1
+  +'3'#6#1'4'#6#1'5'#6#1'6'#6#1'7'#6#1'8'#6#1'9'#6#2'10'#6#2'11'#6#2'12'#6#2'13'
+  +#6#2'14'#6#2'15'#6#2'16'#6#2'17'#6#2'18'#0#7'OnClick'#7#13'RGPlayerClick'#6
+  +'OnExit'#7#14'radioGroupExit'#16'ParentBackground'#8#14'ParentBidiMode'#8#8
+  +'TabOrder'#2#1#0#0#9'TGroupBox'#20'gbSaveGameMapToImage'#4'Left'#2#8#6'Heigh'
+  +'t'#2'e'#4'Hint'#6'LGame''s whole map will be saved to the image file in the'
+  +' ''screenshots'' folder'#3'Top'#2'o'#5'Width'#3#224#0#7'Caption'#6#11'Game '
+  +'images'#12'ClientHeight'#2'T'#11'ClientWidth'#3#222#0#16'ParentBackground'#8
+  +#8'TabOrder'#2#2#0#6'TLabel'#7'Label16'#4'Left'#2#8#6'Height'#2#16#3'Top'#2
+  +'-'#5'Width'#2'R'#7'Caption'#6#15'Max image size:'#0#0#9'TSpinEdit'#14'seMax'
+  +'ImageSize'#4'Left'#2'V'#6'Height'#2'!'#4'Hint'#6'LGame''s whole map will be'
+  +' saved to the image file in the ''screenshots'' folder'#3'Top'#2'*'#5'Width'
+  +#2'<'#7'Enabled'#8#8'MaxValue'#3#216''''#8'MinValue'#3#0#3#8'OnChange'#7#14
+  +'ControlsUpdate'#8'TabOrder'#2#0#5'Value'#3#236#19#0#0#11'TRadioGroup'#11'rg'
+  +'ImageType'#4'Left'#3#152#0#6'Height'#2'K'#3'Top'#2#16#5'Width'#2'B'#8'AutoF'
+  +'ill'#9#7'Caption'#6#10'Image type'#28'ChildSizing.LeftRightSpacing'#2#6#29
+  +'ChildSizing.EnlargeHorizontal'#7#24'crsHomogenousChildResize'#27'ChildSizin'
+  +'g.EnlargeVertical'#7#24'crsHomogenousChildResize'#28'ChildSizing.ShrinkHori'
+  +'zontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7#14'crsScaleCh'
+  +'ilds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenTopToBottom'#27'ChildSi'
+  +'zing.ControlsPerLine'#2#1#12'ClientHeight'#2':'#11'ClientWidth'#2'@'#9'Item'
+  +'Index'#2#0#13'Items.Strings'#1#6#4'jpeg'#6#3'png'#6#3'bmp'#0#7'OnClick'#7#13
+  +'RGPlayerClick'#6'OnExit'#7#14'radioGroupExit'#16'ParentBackground'#8#14'Par'
+  +'entBidiMode'#8#8'TabOrder'#2#1#0#0#7'TButton'#15'btnSaveMapImage'#4'Left'#2
+  +#8#6'Height'#2#20#4'Hint'#6'LGame''s whole map will be saved to the image fi'
+  +'le in the ''screenshots'' folder'#3'Top'#2'G'#5'Width'#3#138#0#7'Caption'#6
+  +#20'Save whole map image'#7'Enabled'#8#8'TabOrder'#2#2#7'OnClick'#7'"Debug_S'
+  +'aveGameWholeMapToImageClick'#0#0#7'TButton'#14'btnPrintScreen'#4'Left'#2#8#6
+  +'Height'#2#20#4'Hint'#6';PrintScreen image will be saved to the ''screenshot'
+  +'s'' folder'#3'Top'#2#16#5'Width'#3#138#0#7'Caption'#6#12'Print screen'#8'Ta'
+  +'bOrder'#2#3#7'OnClick'#7#22'Debug_PrintScreenClick'#0#0#0#0#10'TMyRollOut'
+  +#13'cpDebugOutput'#4'Left'#2#0#6'Height'#2#24#3'Top'#3#169#0#5'Width'#3#200#0
+  +#7'Caption'#6#12'Debug Output'#12'ClientHeight'#2#24#11'ClientWidth'#3#200#0
+  +#7'Enabled'#9#16'ParentBackground'#8#8'TabOrder'#2#9#12'CollapseKind'#7#5'ak'
+  +'Top'#12'ExpandedSize'#3#200#0#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'#2
+  +#27#11'Button.Left'#2#0#13'Button.Height'#2#27#10'Button.Top'#2#0#12'Button.'
+  +'Width'#3#200#0#14'Button.Caption'#6#7'Caption'#12'Button.Color'#7#9'clSkyBl'
+  +'ue'#20'Button.ColorExpanded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0
+  ,#0#160#3'@'#9'Collapsed'#9#8'OnExpand'#7#17'cpCollapseChanged'#10'OnCollapse'
+  +#7#17'cpCollapseChanged'#0#9'TCheckBox'#7'chkUIDs'#4'Left'#2'x'#6'Height'#2
+  +#23#3'Top'#2#6#5'Width'#2'L'#7'Caption'#6#9'UIDs by T'#8'TabOrder'#2#0#7'OnC'
+  +'lick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#18'chkSelectedObjInfo'#4'Left'#2
+  +#8#6'Height'#2#23#3'Top'#2#6#5'Width'#2'b'#7'Caption'#6#14'Selection Info'#8
+  +'TabOrder'#2#1#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#8'chkHands'#4
+  +'Left'#2'x'#6'Height'#2#23#3'Top'#2#22#5'Width'#2';'#7'Caption'#6#5'Hands'#8
+  +'TabOrder'#2#2#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#6'chkGIP'#4
+  +'Left'#2'x'#6'Height'#2#23#3'Top'#2'&'#5'Width'#2'-'#7'Caption'#6#3'GIP'#8'T'
+  +'abOrder'#2#3#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#13'chkGipAsBy'
+  +'tes'#4'Left'#3#168#0#6'Height'#2#23#3'Top'#2'&'#5'Width'#2'D'#7'Caption'#6#8
+  +'as Bytes'#8'TabOrder'#2#4#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'
+  +#10'chkShowFPS'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'&'#5'Width'#2'-'#7'Capti'
+  +'on'#6#3'FPS'#8'TabOrder'#2#5#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBo'
+  +'x'#15'chkShowGameTick'#4'Left'#2#8#6'Height'#2#23#3'Top'#2#22#5'Width'#2'M'
+  +#7'Caption'#6#9'Game tick'#8'TabOrder'#2#6#7'OnClick'#7#14'ControlsUpdate'#0
+  +#0#9'TCheckBox'#11'chkViewport'#4'Left'#2#9#6'Height'#2#23#3'Top'#2'6'#5'Wid'
+  +'th'#2'J'#7'Caption'#6#8'Viewport'#8'TabOrder'#2#7#7'OnClick'#7#14'ControlsU'
+  +'pdate'#0#0#0#10'TMyRollOut'#14'CategoryPanel1'#4'Left'#2#0#6'Height'#2#24#3
+  +'Top'#3#145#0#5'Width'#3#200#0#7'Caption'#6#13'Debug Terrain'#12'ClientHeigh'
+  +'t'#2#24#11'ClientWidth'#3#200#0#7'Enabled'#9#16'ParentBackground'#8#8'TabOr'
+  +'der'#2#10#12'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3#200#0#14'ButtonPos'
+  +'ition'#7#5'akTop'#10'ButtonSize'#2#27#11'Button.Left'#2#0#13'Button.Height'
+  +#2#27#10'Button.Top'#2#0#12'Button.Width'#3#200#0#14'Button.Caption'#6#7'Cap'
+  +'tion'#12'Button.Color'#7#9'clSkyBlue'#20'Button.ColorExpanded'#4#23#136#248
+  +#0#14'AnimationSpeed'#5#0#0#0#0#0#0#0#160#3'@'#9'Collapsed'#9#8'OnExpand'#7
+  +#17'cpCollapseChanged'#10'OnCollapse'#7#17'cpCollapseChanged'#0#9'TCheckBox'
+  +#17'chkShowTerrainIds'#4'Left'#2#8#6'Height'#2#23#3'Top'#2#6#5'Width'#2'R'#7
+  +'Caption'#6#11'Terrain IDs'#8'TabOrder'#2#0#7'OnClick'#7#14'ControlsUpdate'#0
+  +#0#9'TCheckBox'#19'chkShowTerrainKinds'#4'Left'#2#8#6'Height'#2#23#3'Top'#2
+  +#22#5'Width'#2'^'#7'Caption'#6#13'Terrain Kinds'#8'TabOrder'#2#1#7'OnClick'#7
+  +#14'ControlsUpdate'#0#0#9'TCheckBox'#22'chkShowTerrainOverlays'#4'Left'#2#8#6
+  +'Height'#2#23#3'Top'#2'&'#5'Width'#2'l'#7'Caption'#6#16'Terrain overlays'#8
+  +'TabOrder'#2#2#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#9'chkHeight'
+  +#4'Left'#2#8#6'Height'#2#23#3'Top'#2'6'#5'Width'#2'c'#7'Caption'#6#14'Terrai'
+  +'n height'#8'TabOrder'#2#3#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'
+  +#11'chkJamMeter'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'F'#5'Width'#2'O'#7'Capt'
+  +'ion'#6#9'Jam meter'#8'TabOrder'#2#4#7'OnClick'#7#14'ControlsUpdate'#0#0#9'T'
+  +'CheckBox'#13'chkTileObject'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'V'#5'Width'
+  +#2'P'#7'Caption'#6#10'Objects ID'#8'TabOrder'#2#5#7'OnClick'#7#14'ControlsUp'
+  +'date'#0#0#9'TCheckBox'#10'chkTreeAge'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'f'
+  +#5'Width'#2'F'#7'Caption'#6#8'Tree age'#8'TabOrder'#2#6#7'OnClick'#7#14'Cont'
+  +'rolsUpdate'#0#0#9'TCheckBox'#11'chkFieldAge'#4'Left'#2#8#6'Height'#2#23#3'T'
+  +'op'#2'v'#5'Width'#2'I'#7'Caption'#6#9'Field age'#8'TabOrder'#2#7#7'OnClick'
+  +#7#14'ControlsUpdate'#0#0#9'TCheckBox'#11'chkTileLock'#4'Left'#2#8#6'Height'
+  +#2#23#3'Top'#3#134#0#5'Width'#2'D'#7'Caption'#6#9'Tile lock'#8'TabOrder'#2#8
+  +#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#12'chkTileOwner'#4'Left'#2
+  +#8#6'Height'#2#23#3'Top'#3#150#0#5'Width'#2'P'#7'Caption'#6#10'Tile owner'#8
+  +'TabOrder'#2#9#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#11'chkTileUn'
+  +'it'#4'Left'#2#8#6'Height'#2#23#3'Top'#3#166#0#5'Width'#2'E'#7'Caption'#6#9
+  +'Tile Unit'#8'TabOrder'#2#10#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'
+  +#13'chkVertexUnit'#4'Left'#2#8#6'Height'#2#23#3'Top'#3#182#0#5'Width'#2'T'#7
+  +'Caption'#6#11'Vertex Unit'#8'TabOrder'#2#11#7'OnClick'#7#14'ControlsUpdate'
+  +#0#0#9'TCheckBox'#12'chkTilesGrid'#4'Left'#3#128#0#6'Height'#2#23#3'Top'#3
+  +#199#0#5'Width'#2'J'#7'Caption'#6#10'Tiles grid'#8'TabOrder'#2#12#7'OnClick'
+  +#7#14'ControlsUpdate'#0#0#9'TCheckBox'#21'chkDebugTerrainRender'#4'Left'#3
+  +#128#0#6'Height'#2#23#3'Top'#2#6#5'Width'#3#138#0#7'Caption'#6#20'Debug Terr'
+  +'ain render'#8'TabOrder'#2#13#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TGroupBo'
+  +'x'#15'gbRenderTerrain'#4'Left'#2'x'#6'Height'#3#169#0#3'Top'#2#24#5'Width'#3
+  +#129#0#7'Caption'#6#14'Render Terrain'#12'ClientHeight'#3#152#0#11'ClientWid'
+  +'th'#2#127#16'ParentBackground'#8#8'TabOrder'#2#14#0#9'TCheckBox'#20'chkTerr'
+  +'ainRenderAnim'#4'Left'#2#8#6'Height'#2#23#3'Top'#2#16#5'Width'#2'~'#7'Capti'
+  +'on'#6#17'Render Animations'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'
+  +#2#0#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#21'chkTerrainRenderLig'
+  ,'ht'#4'Left'#2#8#6'Height'#2#23#3'Top'#2' '#5'Width'#2'o'#7'Caption'#6#15'Re'
+  +'nder Lighting'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#1#7'OnCli'
+  +'ck'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#22'chkTerrainRenderShadow'#4'Left'
+  +#2#8#6'Height'#2#23#3'Top'#2'0'#5'Width'#2'l'#7'Caption'#6#13'Render Shadow'
+  +#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#2#7'OnClick'#7#14'Contro'
+  +'lsUpdate'#0#0#9'TGroupBox'#13'gbDebugLayers'#4'Left'#2#9#6'Height'#2'\'#3'T'
+  +'op'#2'B'#5'Width'#2'Q'#7'Caption'#6#6'Layers'#12'ClientHeight'#2'K'#11'Clie'
+  +'ntWidth'#2'O'#7'Enabled'#8#16'ParentBackground'#8#8'TabOrder'#2#3#0#9'TChec'
+  +'kBox'#17'chkDebugLayerBase'#4'Left'#2#8#6'Height'#2#23#3'Top'#2#16#5'Width'
+  +#2'2'#7'Caption'#6#4'Base'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2
+  +#0#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#14'chkDebugLayer1'#3'Tag'
+  +#2#1#4'Left'#2#8#6'Height'#2#23#3'Top'#2' '#5'Width'#2''''#7'Caption'#6#2'#1'
+  +#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#1#7'OnClick'#7#14'Contro'
+  +'lsUpdate'#0#0#9'TCheckBox'#14'chkDebugLayer2'#3'Tag'#2#2#4'Left'#2#8#6'Heig'
+  +'ht'#2#23#3'Top'#2'0'#5'Width'#2''''#7'Caption'#6#2'#2'#7'Checked'#9#5'State'
+  +#7#9'cbChecked'#8'TabOrder'#2#2#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheck'
+  +'Box'#14'chkDebugLayer3'#3'Tag'#2#3#4'Left'#2#8#6'Height'#2#23#3'Top'#2'@'#5
+  +'Width'#2''''#7'Caption'#6#2'#3'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabO'
+  +'rder'#2#3#7'OnClick'#7#14'ControlsUpdate'#0#0#0#0#0#10'TMyRollOut'#13'cpDeb'
+  +'ugRender'#4'Left'#2#0#6'Height'#2#24#3'Top'#2'y'#5'Width'#3#200#0#7'Caption'
+  +#6#12'Debug Render'#12'ClientHeight'#2#24#11'ClientWidth'#3#200#0#14'DoubleB'
+  +'uffered'#9#7'Enabled'#9#16'ParentBackground'#8#20'ParentDoubleBuffered'#8#8
+  +'TabOrder'#2#11#12'CollapseKind'#7#5'akTop'#12'ExpandedSize'#3#200#0#14'Butt'
+  +'onPosition'#7#5'akTop'#10'ButtonSize'#2#27#11'Button.Left'#2#0#13'Button.He'
+  +'ight'#2#27#10'Button.Top'#2#0#12'Button.Width'#3#200#0#14'Button.Caption'#6
+  +#7'Caption'#12'Button.Color'#7#9'clSkyBlue'#20'Button.ColorExpanded'#4#23#136
+  +#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0#0#160#3'@'#9'Collapsed'#9#8'OnExpand'
+  +#7#17'cpCollapseChanged'#10'OnCollapse'#7#17'cpCollapseChanged'#0#6'TLabel'#6
+  +'Label2'#4'Left'#3#136#0#6'Height'#2#16#3'Top'#2#5#5'Width'#2'7'#7'Caption'#6
+  +#11'Passability'#0#0#9'TCheckBox'#18'chkSelectionBuffer'#4'Left'#2#8#6'Heigh'
+  +'t'#2#23#3'Top'#2'8'#5'Width'#2'T'#7'Caption'#6#11'Unit hitbox'#8'TabOrder'#2
+  +#0#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#13'chkShowRoutes'#4'Left'
+  +#2#8#6'Height'#2#23#3'Top'#2#24#5'Width'#2'T'#7'Caption'#6#11'Unit routes'#8
+  +'TabOrder'#2#1#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#12'chkShowWi'
+  +'res'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'('#5'Width'#2'\'#7'Caption'#6#13'T'
+  +'errain wires'#8'TabOrder'#2#2#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckB'
+  +'ox'#13'chkSkipRender'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'H'#5'Width'#2'Y'#7
+  +'Caption'#6#11'Skip Render'#8'TabOrder'#2#3#7'OnClick'#7#14'ControlsUpdate'#0
+  +#0#9'TCheckBox'#12'chkSkipSound'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'X'#5'Wi'
+  +'dth'#2'U'#7'Caption'#6#10'Skip Sound'#8'TabOrder'#2#4#7'OnClick'#7#14'Contr'
+  +'olsUpdate'#0#0#9'TTrackBar'#13'tbPassability'#4'Left'#2#2#6'Height'#2#30#3
+  +'Top'#2#4#5'Width'#3#128#0#3'Max'#2#14#8'OnChange'#7#14'ControlsUpdate'#8'Pa'
+  +'geSize'#2#1#8'Position'#2#0#9'TickMarks'#7#6'tmBoth'#9'TickStyle'#7#6'tsNon'
+  +'e'#8'TabOrder'#2#5#0#0#9'TCheckBox'#17'chkShowDefencePos'#4'Left'#3#128#0#6
+  +'Height'#2#23#3'Top'#3#136#0#5'Width'#2'x'#7'Caption'#6#16'Show defence pos'
+  +#8'TabOrder'#2#6#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#17'chkShow'
+  +'UnitRadius'#4'Left'#3#128#0#6'Height'#2#23#3'Top'#2'x'#5'Width'#2'q'#7'Capt'
+  +'ion'#6#16'Show unit radius'#8'TabOrder'#2#7#7'OnClick'#7#14'ControlsUpdate'
+  +#0#0#9'TCheckBox'#18'chkShowTowerRadius'#4'Left'#3#128#0#6'Height'#2#23#3'To'
+  +'p'#2'h'#5'Width'#2'z'#7'Caption'#6#17'Show tower radius'#8'TabOrder'#2#8#7
+  +'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#19'chkShowMiningRadius'#4'Le'
+  +'ft'#3#128#0#6'Height'#2#23#3'Top'#2'X'#5'Width'#3#129#0#7'Caption'#6#18'Sho'
+  +'w mining radius'#8'TabOrder'#2#9#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TChe'
+  +'ckBox'#15'chkShowOverlays'#4'Left'#3#128#0#6'Height'#2#23#3'Top'#2'H'#5'Wid'
+  +'th'#2'd'#7'Caption'#6#13'Show overlays'#7'Checked'#9#5'State'#7#9'cbChecked'
+  +#8'TabOrder'#2#10#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#12'chkSho'
+  +'wUnits'#4'Left'#3#128#0#6'Height'#2#23#3'Top'#2'8'#5'Width'#2'S'#7'Caption'
+  +#6#10'Show units'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#11#7'On'
+  +'Click'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#13'chkShowHouses'#4'Left'#3#128
+  +#0#6'Height'#2#23#3'Top'#2'('#5'Width'#2'^'#7'Caption'#6#11'Show houses'#7'C'
+  +'hecked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#12#7'OnClick'#7#14'Controls'
+  +'Update'#0#0#9'TCheckBox'#14'chkShowObjects'#4'Left'#3#128#0#6'Height'#2#23#3
+  +'Top'#2#24#5'Width'#2'^'#7'Caption'#6#12'Show objects'#7'Checked'#9#5'State'
+  +#7#9'cbChecked'#8'TabOrder'#2#13#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TChec'
+  ,'kBox'#18'chkShowFlatTerrain'#4'Left'#3#128#0#6'Height'#2#23#3'Top'#3#152#0#5
+  +'Width'#2'p'#7'Caption'#6#17'Show flat terrain'#8'TabOrder'#2#14#7'OnClick'#7
+  +#14'ControlsUpdate'#0#0#9'TCheckBox'#14'chkPaintSounds'#4'Left'#2#8#6'Height'
+  +#2#23#3'Top'#2'h'#5'Width'#2'_'#7'Caption'#6#12'Paint Sounds'#8'TabOrder'#2
+  +#15#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#18'chkShowRoutesSteps'#4
+  +'Left'#2'P'#6'Height'#2#23#3'Top'#2#24#5'Width'#2'6'#7'Caption'#6#5'Steps'#8
+  +'TabOrder'#2#16#7'OnClick'#7#14'ControlsUpdate'#0#0#9'TCheckBox'#14'chkViewp'
+  +'ortPos'#4'Left'#2#8#6'Height'#2#23#3'Top'#2'x'#5'Width'#2'x'#7'Caption'#6#17
+  +'Viewport position'#8'TabOrder'#2#17#7'OnClick'#7#14'ControlsUpdate'#0#0#0#10
+  +'TMyRollOut'#14'cpGameControls'#4'Left'#2#0#6'Height'#2'y'#3'Top'#2#0#5'Widt'
+  +'h'#3#200#0#7'Caption'#6#4'Game'#12'ClientHeight'#2'y'#11'ClientWidth'#3#200
+  +#0#7'Enabled'#9#16'ParentBackground'#8#8'TabOrder'#2#12#12'CollapseKind'#7#5
+  +'akTop'#12'ExpandedSize'#2'y'#14'ButtonPosition'#7#5'akTop'#10'ButtonSize'#2
+  +#27#11'Button.Left'#2#0#13'Button.Height'#2#27#10'Button.Top'#2#0#12'Button.'
+  +'Width'#3#200#0#14'Button.Caption'#6#7'Caption'#12'Button.Color'#7#9'clSkyBl'
+  +'ue'#20'Button.ColorExpanded'#4#23#136#248#0#14'AnimationSpeed'#5#0#0#0#0#0#0
+  +#0#160#3'@'#8'OnExpand'#7#17'cpCollapseChanged'#10'OnCollapse'#7#17'cpCollap'
+  +'seChanged'#0#6'TLabel'#6'Label8'#4'Left'#2'<'#6'Height'#2#16#3'Top'#2#30#5
+  +'Width'#2'Y'#7'Caption'#6#17'Pause before tick'#0#0#6'TLabel'#6'Label9'#4'Le'
+  +'ft'#2#14#6'Height'#2#16#3'Top'#2'6'#5'Width'#3#140#0#7'Caption'#6#26'Make s'
+  +'avepoint before tick'#0#0#6'TLabel'#7'Label12'#4'Left'#2'R'#6'Height'#2#16#3
+  +'Top'#2'N'#5'Width'#2'C'#7'Caption'#6#11'Custom seed'#0#0#9'TCheckBox'#13'ch'
+  +'kSuperSpeed'#4'Left'#2#8#6'Height'#2#23#4'Hint'#6'/Autosave is disabled whi'
+  +'le on very fast speedup'#3'Top'#2#5#5'Width'#2'U'#7'Caption'#6#10'Speed x20'
+  +'0'#8'TabOrder'#2#0#7'OnClick'#7#18'chkSuperSpeedClick'#0#0#7'TButton'#11'bt'
+  +'nGameStop'#4'Left'#3#200#0#6'Height'#2#17#3'Top'#2#5#5'Width'#2'#'#7'Captio'
+  +'n'#6#4'Stop'#8'TabOrder'#2#1#7'OnClick'#7#16'btnGameStopClick'#0#0#9'TSpinE'
+  +'dit'#17'sePauseBeforeTick'#4'Left'#3#149#0#6'Height'#2'!'#3'Top'#2#28#5'Wid'
+  +'th'#2'Z'#8'MaxValue'#4#127#150#152#0#8'OnChange'#7#14'ControlsUpdate'#8'Tab'
+  +'Order'#2#2#0#0#9'TSpinEdit'#22'seMakeSaveptBeforeTick'#4'Left'#3#149#0#6'He'
+  +'ight'#2'!'#3'Top'#2'4'#5'Width'#2'Z'#8'MaxValue'#4#127#150#152#0#8'OnChange'
+  +#7#14'ControlsUpdate'#8'TabOrder'#2#3#0#0#9'TSpinEdit'#12'seCustomSeed'#4'Le'
+  +'ft'#3#149#0#6'Height'#2'!'#3'Top'#2'L'#5'Width'#2'Z'#8'MaxValue'#4#255#255
+  +#255#127#8'OnChange'#7#14'ControlsUpdate'#8'TabOrder'#2#4#0#0#7'TButton'#11
+  +'btnGameSave'#4'Left'#2'u'#6'Height'#2#17#3'Top'#2#5#5'Width'#2'#'#7'Caption'
+  +#6#4'Save'#8'TabOrder'#2#5#7'OnClick'#7#16'btnGameSaveClick'#0#0#7'TButton'
+  +#14'btnGameRestart'#4'Left'#3#155#0#6'Height'#2#17#3'Top'#2#5#5'Width'#2'*'#7
+  +'Caption'#6#7'Restart'#8'TabOrder'#2#6#7'OnClick'#7#19'btnGameRestartClick'#0
+  +#0#0#0#11'TOpenDialog'#11'OpenDialog1'#10'InitialDir'#6#1'.'#7'Options'#11#14
+  +'ofHideReadOnly'#15'ofFileMustExist'#14'ofEnableSizing'#0#4'Left'#2#24#3'Top'
+  +#2'@'#0#0#9'TMainMenu'#9'MainMenu1'#4'Left'#2#24#3'Top'#2#8#0#9'TMenuItem'#5
+  +'File1'#7'Caption'#6#4'File'#0#9'TMenuItem'#15'OpenMissionMenu'#7'Caption'#6
+  +#16'Start mission...'#7'OnClick'#7#21'Open_MissionMenuClick'#0#0#9'TMenuItem'
+  +#9'MenuItem1'#7'Caption'#6#15'Edit mission...'#7'OnClick'#7#14'MenuItem1Clic'
+  +'k'#0#0#9'TMenuItem'#20'SaveEditableMission1'#7'Caption'#6#24'Save editable '
+  +'mission...'#7'Enabled'#8#7'OnClick'#7#25'SaveEditableMission1Click'#0#0#9'T'
+  +'MenuItem'#2'N5'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#14'LoadSavThenRpl'#7'Cap'
+  +'tion'#6#19'Load .sav then .rpl'#7'OnClick'#7#19'LoadSavThenRplClick'#0#0#9
+  +'TMenuItem'#3'N15'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#15'Openscriptfile1'#7
+  +'Caption'#6#17'Open .script file'#7'Enabled'#8#7'OnClick'#7#20'Openscriptfil'
+  +'e1Click'#0#0#9'TMenuItem'#2'N4'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#14'Reloa'
+  +'dSettings'#7'Caption'#6#15'Reload settings'#7'OnClick'#7#19'ReloadSettingsC'
+  +'lick'#0#0#9'TMenuItem'#12'SaveSettings'#7'Caption'#6#13'Save settings'#7'On'
+  +'Click'#7#17'SaveSettingsClick'#0#0#9'TMenuItem'#17'mnOpenSettingsDir'#7'Cap'
+  +'tion'#6#20'Open settings folder'#7'OnClick'#7#22'mnOpenSettingsDirClick'#0#0
+  +#9'TMenuItem'#17'mnOpenSettingsXML'#7'Caption'#6#17'Open settings.xml'#7'OnC'
+  +'lick'#7#22'mnOpenSettingsXMLClick'#0#0#9'TMenuItem'#2'N7'#7'Caption'#6#1'-'
+  +#0#0#9'TMenuItem'#10'ReloadLibx'#7'Caption'#6#26'Reload Libx (translations)'
+  +#7'OnClick'#7#15'ReloadLibxClick'#0#0#9'TMenuItem'#2'N1'#7'Caption'#6#1'-'#0
+  +#0#9'TMenuItem'#5'Exit1'#7'Caption'#6#4'Exit'#7'OnClick'#7#9'ExitClick'#0#0#0
+  +#9'TMenuItem'#6'Debug1'#7'Caption'#6#5'Debug'#0#9'TMenuItem'#17'Debug_PrintS'
+  +'creen'#7'Caption'#6#11'PrintScreen'#4'Hint'#6';PrintScreen image will be sa'
+  +'ved to the ''screenshots'' folder'#7'OnClick'#7#22'Debug_PrintScreenClick'#0
+  +#0#9'TMenuItem'#29'Debug_SaveGameWholeMapToImage'#7'Caption'#6#28'Save game '
+  ,'whole map to image'#7'Enabled'#8#4'Hint'#6'LGame''s whole map will be saved'
+  +' to the image file in the ''screenshots'' folder'#7'OnClick'#7'"Debug_SaveG'
+  +'ameWholeMapToImageClick'#0#0#9'TMenuItem'#2'N8'#7'Caption'#6#1'-'#0#0#9'TMe'
+  +'nuItem'#18'Debug_EnableCheats'#7'Caption'#6#12'Debug Cheats'#7'OnClick'#7#23
+  +'Debug_EnableCheatsClick'#0#0#9'TMenuItem'#23'Debug_UnlockCmpMissions'#7'Cap'
+  +'tion'#6#25'Unlock campaigns missions'#7'OnClick'#7#28'Debug_UnlockCmpMissio'
+  +'nsClick'#0#0#9'TMenuItem'#2'N9'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#15'Debug'
+  +'_ShowPanel'#7'Caption'#6#16'Show Debug panel'#7'OnClick'#7#20'Debug_ShowPan'
+  +'elClick'#0#0#9'TMenuItem'#19'Debug_ShowLogistics'#7'Caption'#6#14'Show Logi'
+  +'stics'#7'OnClick'#7#24'Debug_ShowLogisticsClick'#0#0#0#9'TMenuItem'#7'Expor'
+  +'t1'#7'Caption'#6#11'Export Data'#0#9'TMenuItem'#10'Resources1'#7'Caption'#6
+  +#9'Resources'#0#9'TMenuItem'#13'Export_Fonts1'#7'Caption'#6#5'Fonts'#7'OnCli'
+  +'ck'#7#18'Export_Fonts1Click'#0#0#9'TMenuItem'#14'Export_Sounds1'#7'Caption'
+  +#6#6'Sounds'#7'OnClick'#7#19'Export_Sounds1Click'#0#0#9'TMenuItem'#6'Other1'
+  +#7'Caption'#6#1'-'#7'Enabled'#8#0#0#9'TMenuItem'#14'Export_TreesRX'#7'Captio'
+  +'n'#6#9'Trees.rxx'#7'OnClick'#7#19'Export_TreesRXClick'#0#0#9'TMenuItem'#15
+  +'Export_HousesRX'#7'Caption'#6#10'Houses.rxx'#7'OnClick'#7#20'Export_HousesR'
+  +'XClick'#0#0#9'TMenuItem'#14'Export_UnitsRX'#7'Caption'#6#9'Units.rxx'#7'OnC'
+  +'lick'#7#19'Export_UnitsRXClick'#0#0#9'TMenuItem'#12'Export_GUIRX'#7'Caption'
+  +#6#7'GUI.rxx'#7'OnClick'#7#15'Export_GUIClick'#0#0#9'TMenuItem'#16'Export_GU'
+  +'IMainRX'#7'Caption'#6#11'GUIMain.rxx'#7'OnClick'#7#21'Export_GUIMainRXClick'
+  +#0#0#9'TMenuItem'#14'Export_Tileset'#7'Caption'#6#11'Tileset.rxx'#7'OnClick'
+  +#7#19'Export_TilesetClick'#0#0#9'TMenuItem'#13'Export_Custom'#7'Caption'#6#6
+  +'Custom'#7'OnClick'#7#18'Export_CustomClick'#0#0#9'TMenuItem'#3'N14'#7'Capti'
+  +'on'#6#1'-'#7'Enabled'#8#0#0#9'TMenuItem'#8'reesrxa1'#7'Caption'#6#9'Trees.r'
+  +'xa'#7'OnClick'#7#13'reesrxa1Click'#0#0#9'TMenuItem'#10'Housesrxa1'#7'Captio'
+  +'n'#6#10'Houses.rxa'#7'OnClick'#7#15'Housesrxa1Click'#0#0#9'TMenuItem'#9'Uni'
+  +'tsrxa1'#7'Caption'#6#9'Units.rxa'#7'OnClick'#7#14'Unitsrxa1Click'#0#0#0#9'T'
+  +'MenuItem'#12'mnAnimations'#7'Caption'#6#10'Animations'#0#9'TMenuItem'#16'mn'
+  +'ExportTreeAnim'#7'Caption'#6#9'Tree Anim'#7'OnClick'#7#21'mnExportTreeAnimC'
+  +'lick'#0#0#9'TMenuItem'#17'mnExportHouseAnim'#7'Caption'#6#10'House Anim'#7
+  +'OnClick'#7#22'mnExportHouseAnimClick'#0#0#9'TMenuItem'#16'mnExportUnitAnim'
+  +#7'Caption'#6#9'Unit Anim'#0#9'TMenuItem'#19'mnExportUnitAnimAll'#7'Caption'
+  +#6#3'All'#7'OnClick'#7#24'mnExportUnitAnimAllClick'#0#0#9'TMenuItem'#2'N3'#7
+  +'Caption'#6#1'-'#0#0#9'TMenuItem'#24'mnExportUnitAnimSoldiers'#7'Caption'#6#8
+  +'Soldiers'#7'OnClick'#7#29'mnExportUnitAnimSoldiersClick'#0#0#9'TMenuItem'#25
+  +'mnExportUnitAnimCivilians'#7'Caption'#6#9'Civilians'#7'OnClick'#7#30'mnExpo'
+  +'rtUnitAnimCiviliansClick'#0#0#0#0#9'TMenuItem'#14'mnHDAnimations'#7'Caption'
+  +#6#13'HD Animations'#0#9'TMenuItem'#18'mnExportHDTreeAnim'#7'Caption'#6#12'H'
+  +'D Tree Anim'#7'OnClick'#7#23'mnExportHDTreeAnimClick'#0#0#9'TMenuItem'#19'm'
+  +'nExportHDHouseAnim'#7'Caption'#6#13'HD House Anim'#7'OnClick'#7#24'mnExport'
+  +'HDHouseAnimClick'#0#0#9'TMenuItem'#18'mnExportHDUnitAnim'#7'Caption'#6#12'H'
+  +'D Unit Anim'#0#9'TMenuItem'#21'mnExportHDUnitAnimAll'#7'Caption'#6#6'All HD'
+  +#7'OnClick'#7#26'mnExportHDUnitAnimAllClick'#0#0#9'TMenuItem'#3'N13'#7'Capti'
+  +'on'#6#1'-'#0#0#9'TMenuItem'#26'mnExportHDUnitAnimSoldiers'#7'Caption'#6#11
+  +'Soldiers HD'#7'OnClick'#7#31'mnExportHDUnitAnimSoldiersClick'#0#0#9'TMenuIt'
+  +'em'#27'mnExportHDUnitAnimCivilians'#7'Caption'#6#12'Civilians HD'#7'OnClick'
+  +#7' mnExportHDUnitAnimCiviliansClick'#0#0#9'TMenuItem'#22'mnExportHDUnitThou'
+  +'ghts'#7'Caption'#6#11'Thoughts HD'#7'OnClick'#7#27'mnExportHDUnitThoughtsCl'
+  +'ick'#0#0#0#0#9'TMenuItem'#2'N2'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#15'Resou'
+  +'rceValues1'#7'Caption'#6#15'Resource Values'#7'OnClick'#7#20'ResourceValues'
+  +'1Click'#0#0#9'TMenuItem'#20'Export_Deliverlists1'#7'Caption'#6#13'Deliver l'
+  +'ists'#7'OnClick'#7#25'Export_Deliverlists1Click'#0#0#9'TMenuItem'#17'mnExpo'
+  +'rtHousesDat'#7'Caption'#6#17'Houses.dat to csv'#7'OnClick'#7#22'mnExportHou'
+  +'sesDatClick'#0#0#9'TMenuItem'#16'mnExportUnitsDat'#7'Caption'#6#16'Units.da'
+  +'t to csv'#7'OnClick'#7#21'mnExportUnitsDatClick'#0#0#9'TMenuItem'#11'Script'
+  +'Data1'#7'Caption'#6#11'Script Data'#7'OnClick'#7#22'Export_ScriptDataClick'
+  +#0#0#9'TMenuItem'#12'mnScriptCode'#7'Caption'#6#11'Script Code'#7'OnClick'#7
+  +#17'mnScriptCodeClick'#0#0#9'TMenuItem'#2'N6'#7'Caption'#6#1'-'#0#0#9'TMenuI'
+  +'tem'#9'GameStats'#7'Caption'#6#15'Game statistics'#0#9'TMenuItem'#15'Export'
+  +'GameStats'#7'Caption'#6#6'Export'#7'Enabled'#8#7'OnClick'#7#20'ExportGameSt'
+  +'atsClick'#0#0#9'TMenuItem'#17'ValidateGameStats'#7'Caption'#6#8'Validate'#7
+  +'OnClick'#7#22'ValidateGameStatsClick'#0#0#0#9'TMenuItem'#3'N10'#7'Caption'#6
+  +#1'-'#0#0#9'TMenuItem'#14'ExportMainMenu'#7'Caption'#6#15'Export MainMenu'#7
+  ,'OnClick'#7#21'Debug_ExportMenuClick'#0#0#9'TMenuItem'#13'ExportUIPages'#7'C'
+  +'aption'#6#15'Export UI pages'#7'OnClick'#7#24'Debug_ExportUIPagesClick'#0#0
+  +#9'TMenuItem'#3'N11'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#17'mnExportRngChecks'
+  +#7'Caption'#6#13'Random checks'#7'OnClick'#7#22'mnExportRngChecksClick'#0#0#9
+  +'TMenuItem'#11'mnExportRPL'#7'Caption'#6#13'GIC from .rpl'#7'OnClick'#7#16'm'
+  +'nExportRPLClick'#0#0#9'TMenuItem'#3'N12'#7'Caption'#6#1'-'#0#0#9'TMenuItem'
+  +#19'miExportMemoryUsage'#7'Caption'#6#12'Memory Usage'#7'OnClick'#7#24'miExp'
+  +'ortMemoryUsageClick'#0#0#0#9'TMenuItem'#6'About1'#7'Caption'#6#7'About..'#7
+  +'OnClick'#7#10'AboutClick'#0#0#0#11'TSaveDialog'#11'SaveDialog1'#4'Left'#2#24
+  +#3'Top'#2'x'#0#0#0
 ]);

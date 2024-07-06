@@ -1199,6 +1199,8 @@ procedure TKMScripting.LinkRuntime;
           for I := 0 to TPSTypeRec_Record(aType).FieldTypes.Count - 1 do
             Result := Result + ValidateVarType(TPSTypeRec_Record(aType).FieldTypes[I]);
         end;
+    else
+      Result := '';
     end;
   end;
 

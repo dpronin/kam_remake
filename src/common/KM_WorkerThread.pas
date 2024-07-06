@@ -2,7 +2,7 @@ unit KM_WorkerThread;
 {$I KaM_Remake.inc}
 interface
 uses
-  Classes, SysUtils, Generics.Collections;
+  Classes, SysUtils, SyncObjs, Generics.Collections;
 
   // procedure TKMWorkLoggerCallback(aJobName: String);
 
@@ -37,7 +37,7 @@ type
     fWorkerThreadName: string;
     fWorkCompleted: Boolean;
     fTaskQueue: TQueue<ITKMWorkerThreadTask>;
-
+    fCritSection: TCriticalSection;
     procedure NameThread; overload;
     procedure NameThread(aThreadName: string); overload;
     function GetBaseThreadName: string;
@@ -106,6 +106,7 @@ begin
   inherited Create(False);
 
   fWorkerThreadName := aThreadName;
+  fCritSection := TCriticalSection.Create;
 
   {$IFDEF DEBUG}
   if fWorkerThreadName <> '' then
@@ -121,12 +122,12 @@ destructor TKMWorkerThread.Destroy;
 begin
   Terminate;
   //Wake the thread if it's waiting
-  // TMonitor.Enter(fTaskQueue);
-  // try
-  // TMonitor.Pulse(fTaskQueue);
-  // finally
-  // TMonitor.Exit(fTaskQueue);
-  // end;
+   fCritSection.Enter;
+  try
+    fCritSection.Free;
+  finally
+    fCritSection.Leave;
+  end;
 
   inherited Destroy;
 
@@ -173,7 +174,7 @@ begin
 
   while loopRunning do
   begin
-    // TMonitor.Enter(fTaskQueue);
+    fCritSection.Enter;
     try
       threadName := GetBaseThreadName; // get name under TMonitor, cause we access fTaskQueue
       if fTaskQueue.Count > 0 then
@@ -191,7 +192,7 @@ begin
         begin
           //Notify main thread that worker is idle if it's blocked in WaitForAllWorkToComplete
           fWorkCompleted := True;
-          // TMonitor.Pulse(fTaskQueue);
+          fCritSection.Free;
 
           // TMonitor.Wait(fTaskQueue, 10000);
           if fTaskQueue.Count > 0 then
@@ -199,7 +200,7 @@ begin
         end;
       end;
     finally
-      // TMonitor.Exit(fTaskQueue);
+      fCritSection.Leave;
     end;
 
     if job <> nil then
@@ -234,14 +235,13 @@ begin
     if Finished then
       raise Exception.Create('Worker thread not running in TKMWorkerThread.Enqueue');
 
-    // TMonitor.Enter(fTaskQueue);
+    fCritSection.Enter;
     try
       fWorkCompleted := False;
       fTaskQueue.Enqueue(aTask);
-
-      // TMonitor.Pulse(fTaskQueue);
+      fCritSection.Free;
     finally
-      // TMonitor.Exit(fTaskQueue);
+      fCritSection.Leave;
     end;
   end;
 end;
@@ -252,15 +252,15 @@ begin
   if fSynchronousExceptionMode then
     Exit;
 
-  // TMonitor.Enter(fTaskQueue);
+    fCritSection.Enter;
   try
     if not fWorkCompleted and not Finished then
     begin
       //Wait infinite until worker thread finish his job
-      // while not TMonitor.Wait(fTaskQueue, 1000) do ;
+      //while not fCritSection. (fTaskQueue, 1000) do ;
     end;
   finally
-    // TMonitor.Exit(fTaskQueue);
+    fCritSection.Leave;
   end;
 end;
 

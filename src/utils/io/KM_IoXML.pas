@@ -2,7 +2,7 @@ unit KM_IoXML;
 {$I KaM_Remake.inc}
 interface
 uses
-  Classes, SysUtils
+  Classes, SysUtils, LazLogger
 
   {$IFDEF WDC}
   , Xml.VerySimple // (Attributes can be only 'string', which is not convenient)
@@ -57,6 +57,7 @@ type
   private
     fDocument: TKMXmlDomDocument;
     fRoot: TKMXmlNode;
+    cNode: TDOMNode;
     function GetText: String;
     procedure SetText(const aText: string);
     procedure ApplyDefaultSettings;
@@ -120,7 +121,8 @@ begin
   {$IFDEF FPC}
   if aRoot <> '' then
   begin
-    fRoot := TKMXmlNode(fDocument.CreateElement(aRoot));
+    fRoot := TKMXmlNode.create(fDocument);
+    fRoot.appendChild(fDocument.CreateElement(aRoot));
     fDocument.AppendChild(fRoot);
   end;
   {$ENDIF}
@@ -175,14 +177,14 @@ begin
       fRoot := TKMXmlNode(fDocument.ChildNodes.Add(aRoot));
   {$ENDIF}
   {$IFDEF FPC}
-    fRoot := TKMXmlNode(fDocument.DocumentElement.FindNode(aRoot));
-
+    cNode := fDocument.DocumentElement.FindNode(aRoot);
+    fRoot := TKMXmlNode.Create(fDocument);
     // Create root if it's missing, so that XML could be processed and default parameters created
-    if fRoot = nil then
+    if cNode <> nil then
     begin
-      fRoot := TKMXmlNode(fDocument.CreateElement(aRoot));
-      fDocument.AppendChild(fRoot);
+      fRoot.AppendChild(cNode);
     end;
+    //fDocument.AppendChild(fRoot);
   {$ENDIF}
 end;
 
@@ -195,7 +197,8 @@ begin
   fDocument.SaveToFile(aFilename);
   {$ENDIF}
   {$IFDEF FPC}
-  WriteXMLFile(fDocument, aFilename);
+  //if fDocument <> nil then
+  //  WriteXMLFile(fDocument, aFilename);
   {$ENDIF}
 end;
 
@@ -373,7 +376,11 @@ end;
 
 function TKMSimpleVariant.AsInteger: Integer;
 begin
-  Result := StrToInt(fValue);
+  writeln('Cast '+fValue+' as integer');
+  if fValue = '' then
+    Result := 0
+  else
+    Result := StrToInt(fValue)
 end;
 
 function TKMSimpleVariant.AsInteger(aDefault: Integer): Integer;

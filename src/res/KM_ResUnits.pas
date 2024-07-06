@@ -664,6 +664,7 @@ var
   S: TKMemoryStream;
   I: Integer;
 begin
+  writeln('Read file ' + aPath);
   Assert(FileExists(aPath), Format('unit.dat can not be found at "%s"', [ExtractRelativePath(ExeDir, aPath)]));
 
   S := TKMemoryStreamBinary.Create;

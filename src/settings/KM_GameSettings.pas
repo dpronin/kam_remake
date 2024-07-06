@@ -448,7 +448,7 @@ begin
       fShowGameTime    := nGameMisc.Attributes['ShowGameTime'].AsBoolean(False);
       fShowGameSpeed   := nGameMisc.Attributes['ShowGameSpeed'].AsBoolean(False);
       fDayGamesCount   := nGameMisc.Attributes['DayGamesCount'].AsInteger(0);
-      if nGameMisc.HasAttribute('LastDayGamePlayed') then
+      if nGameMisc.HasAttribute('LastDayGamePlayed') and not(nGameMisc.Attributes['LastDayGamePlayed'].AsString() ='') then
         fLastDayGamePlayed  := nGameMisc.Attributes['LastDayGamePlayed'].AsDateTime
       else
         fLastDayGamePlayed  := DATE_TIME_ZERO;

@@ -149,18 +149,18 @@ begin
   Application.CreateForm(TFormMain, fFormMain);
   Application.CreateForm(TFormLoading, fFormLoading);
 
-  {$IFDEF PERFLOG}
-  gPerfLogs := TKMPerfLogs.Create([], True);
-  gPerfLogs.ShowForm(fFormMain.cpPerfLogs);
-  gPerfLogs.OnFormChanged := fFormMain.OtherFormChanged;
-
-  collapsed := fFormMain.cpPerfLogs.Collapsed; //Save collapsed flag
-  fFormMain.cpPerfLogs.Collapsed := False; //We can set TCategoryPanel height only when collapsed set to False
-  fFormMain.cpPerfLogs.Height := gPerfLogs.FormHeight;
-  fFormMain.cpPerfLogs.Collapsed := collapsed; //Restore collapsed flag
-  {$ELSE}
-  fFormMain.cpPerfLogs.Hide;
-  {$ENDIF}
+  //{$IFDEF PERFLOG}
+  //gPerfLogs := TKMPerfLogs.Create([], True);
+  //gPerfLogs.ShowForm(fFormMain.cpPerfLogs);
+  //gPerfLogs.OnFormChanged := fFormMain.OtherFormChanged;
+  //
+  //collapsed := fFormMain.cpPerfLogs.Collapsed; //Save collapsed flag
+  //fFormMain.cpPerfLogs.Collapsed := False; //We can set TCategoryPanel height only when collapsed set to False
+  //fFormMain.cpPerfLogs.Height := gPerfLogs.FormHeight;
+  //fFormMain.cpPerfLogs.Collapsed := collapsed; //Restore collapsed flag
+  //{$ELSE}
+  //fFormMain.cpPerfLogs.Hide;
+  //{$ENDIF}
 end;
 
 
@@ -218,7 +218,7 @@ begin
 
   time := TimeGet;
 
-  ExeDir := ExtractFilePath(ParamStr(0));
+  ExeDir := GetCurrentDir()+'/';
 
   // Set custom AssertErrorhandler to avoid dev paths in the error messages, which could be seen by players
   AssertErrorProc := @CustomAssertErrorHandler;
