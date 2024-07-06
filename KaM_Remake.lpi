@@ -46,10 +46,12 @@
       <Unit0>
         <Filename Value="KaM_Remake.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="380"/>
-        <CursorPos X="24" Y="397"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="379"/>
+        <CursorPos X="5" Y="408"/>
         <UsageCount Value="114"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
@@ -280,7 +282,7 @@
       <Unit28>
         <Filename Value="src\game\KM_Game.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="2510"/>
         <CursorPos X="15" Y="2519"/>
         <UsageCount Value="105"/>
@@ -571,7 +573,7 @@
       <Unit58>
         <Filename Value="src\mission\KM_Campaigns.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="12"/>
+        <EditorIndex Value="13"/>
         <TopLine Value="256"/>
         <CursorPos X="32" Y="263"/>
         <UsageCount Value="105"/>
@@ -597,7 +599,7 @@
       <Unit61>
         <Filename Value="src\common\KM_CommonClassesExt.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="41"/>
         <CursorPos X="47" Y="54"/>
         <UsageCount Value="105"/>
@@ -1347,7 +1349,7 @@
       <Unit140>
         <Filename Value="src\hands\KM_Hand.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="10"/>
         <TopLine Value="59"/>
         <CursorPos X="32" Y="69"/>
         <UsageCount Value="105"/>
@@ -2561,7 +2563,7 @@
       <Unit266>
         <Filename Value="src\utils\KM_CommonUtils.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="11"/>
         <TopLine Value="2075"/>
         <CursorPos X="61" Y="2096"/>
         <UsageCount Value="105"/>
@@ -2575,6 +2577,7 @@
         <CursorPos X="33" Y="115"/>
         <UsageCount Value="105"/>
         <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit267>
       <Unit268>
         <Filename Value="src\utils\algorithms\KM_FloodFill.pas"/>
@@ -2871,8 +2874,7 @@
       </Unit302>
       <Unit303>
         <Filename Value="src\common\KM_WorkerThread.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="11"/>
+        <EditorIndex Value="12"/>
         <TopLine Value="79"/>
         <CursorPos X="83" Y="82"/>
         <UsageCount Value="11"/>
@@ -2913,7 +2915,7 @@
       <Unit308>
         <Filename Value="..\..\..\..\..\usr\lib\fpc\3.2.2\source\packages\rtl-generics\src\generics.collections.pas"/>
         <UnitName Value="Generics.Collections"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="229"/>
         <CursorPos X="53" Y="236"/>
         <UsageCount Value="10"/>
@@ -3034,7 +3036,7 @@
       </Unit325>
       <Unit326>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="352"/>
         <CursorPos X="54" Y="373"/>
         <UsageCount Value="11"/>
@@ -3130,7 +3132,7 @@
       <Unit338>
         <Filename Value="..\..\..\..\..\usr\lib\fpc\3.2.2\source\packages\rtl-generics\src\generics.defaults.pas"/>
         <UnitName Value="Generics.Defaults"/>
-        <EditorIndex Value="13"/>
+        <EditorIndex Value="14"/>
         <TopLine Value="52"/>
         <CursorPos X="3" Y="69"/>
         <UsageCount Value="16"/>
@@ -3237,123 +3239,123 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="257" Column="78" TopLine="243"/>
+        <Caret Line="273" TopLine="259"/>
       </Position1>
       <Position2>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="267" Column="40" TopLine="254"/>
+        <Caret Line="281" Column="58" TopLine="261"/>
       </Position2>
       <Position3>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="273" TopLine="259"/>
+        <Caret Line="292" Column="45" TopLine="281"/>
       </Position3>
       <Position4>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="281" Column="58" TopLine="261"/>
+        <Caret Line="299" Column="49" TopLine="279"/>
       </Position4>
       <Position5>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="292" Column="45" TopLine="281"/>
+        <Caret Line="314" Column="32" TopLine="295"/>
       </Position5>
       <Position6>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="299" Column="49" TopLine="279"/>
+        <Caret Line="309" Column="41" TopLine="290"/>
       </Position6>
       <Position7>
-        <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="314" Column="32" TopLine="295"/>
-      </Position7>
-      <Position8>
-        <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="309" Column="41" TopLine="290"/>
-      </Position8>
-      <Position9>
         <Filename Value="src\utils\KM_CommonUtils.pas"/>
         <Caret Line="2083" Column="5" TopLine="2072"/>
-      </Position9>
-      <Position10>
+      </Position7>
+      <Position8>
         <Filename Value="src\utils\KM_CommonUtils.pas"/>
         <Caret Line="2089" Column="5" TopLine="2075"/>
+      </Position8>
+      <Position9>
+        <Filename Value="src\game\KM_GameSavePoints.pas"/>
+        <Caret Line="294" Column="3" TopLine="280"/>
+      </Position9>
+      <Position10>
+        <Filename Value="src\game\KM_GameSavePoints.pas"/>
+        <Caret Line="9" Column="5"/>
       </Position10>
       <Position11>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="294" Column="3" TopLine="280"/>
+        <Caret Line="297" Column="32" TopLine="284"/>
       </Position11>
       <Position12>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="9" Column="5"/>
+        <Caret Line="31" Column="30" TopLine="16"/>
       </Position12>
       <Position13>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="297" Column="32" TopLine="284"/>
+        <Caret Line="313" Column="56" TopLine="299"/>
       </Position13>
       <Position14>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="31" Column="30" TopLine="16"/>
+        <Caret Line="380" Column="71" TopLine="367"/>
       </Position14>
       <Position15>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="313" Column="56" TopLine="299"/>
+        <Caret Line="408" Column="5" TopLine="397"/>
       </Position15>
       <Position16>
-        <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="380" Column="71" TopLine="367"/>
+        <Filename Value="src\settings\KM_SettingsDev.pas"/>
+        <Caret Line="206" Column="27" TopLine="199"/>
       </Position16>
       <Position17>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
         <Caret Line="408" Column="5" TopLine="397"/>
       </Position17>
       <Position18>
-        <Filename Value="src\settings\KM_SettingsDev.pas"/>
-        <Caret Line="206" Column="27" TopLine="199"/>
+        <Filename Value="src\game\KM_GameSavePoints.pas"/>
+        <Caret Line="97" Column="53" TopLine="79"/>
       </Position18>
       <Position19>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="408" Column="5" TopLine="397"/>
+        <Caret Line="362" Column="29" TopLine="352"/>
       </Position19>
       <Position20>
-        <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="97" Column="53" TopLine="79"/>
+        <Filename Value="src\game\KM_Game.pas"/>
+        <Caret Line="2505" Column="25" TopLine="2491"/>
       </Position20>
       <Position21>
-        <Filename Value="src\game\KM_GameSavePoints.pas"/>
-        <Caret Line="362" Column="29" TopLine="352"/>
+        <Filename Value="src\game\KM_Game.pas"/>
+        <Caret Line="85" Column="29" TopLine="72"/>
       </Position21>
       <Position22>
         <Filename Value="src\game\KM_Game.pas"/>
-        <Caret Line="2505" Column="25" TopLine="2491"/>
+        <Caret Line="21" Column="28" TopLine="6"/>
       </Position22>
       <Position23>
         <Filename Value="src\game\KM_Game.pas"/>
-        <Caret Line="85" Column="29" TopLine="72"/>
+        <Caret Line="2505" Column="23" TopLine="2491"/>
       </Position23>
       <Position24>
-        <Filename Value="src\game\KM_Game.pas"/>
-        <Caret Line="21" Column="28" TopLine="6"/>
+        <Filename Value="..\..\..\..\..\usr\lib\fpc\3.2.2\source\packages\rtl-generics\src\generics.collections.pas"/>
+        <Caret Line="296" Column="15" TopLine="207"/>
       </Position24>
       <Position25>
         <Filename Value="src\game\KM_Game.pas"/>
-        <Caret Line="2505" Column="23" TopLine="2491"/>
+        <Caret Line="85" Column="82" TopLine="72"/>
       </Position25>
       <Position26>
-        <Filename Value="..\..\..\..\..\usr\lib\fpc\3.2.2\source\packages\rtl-generics\src\generics.collections.pas"/>
-        <Caret Line="296" Column="15" TopLine="207"/>
-      </Position26>
-      <Position27>
-        <Filename Value="src\game\KM_Game.pas"/>
-        <Caret Line="85" Column="82" TopLine="72"/>
-      </Position27>
-      <Position28>
         <Filename Value="src\game\KM_GameSavePoints.pas"/>
         <Caret Line="373" Column="54" TopLine="352"/>
-      </Position28>
-      <Position29>
+      </Position26>
+      <Position27>
         <Filename Value="src\common\KM_WorkerThread.pas"/>
         <Caret Line="16" Column="45"/>
-      </Position29>
-      <Position30>
+      </Position27>
+      <Position28>
         <Filename Value="src\common\KM_WorkerThread.pas"/>
         <Caret Line="30" Column="41" TopLine="11"/>
+      </Position28>
+      <Position29>
+        <Filename Value="src\utils\io\KM_FileIO.pas"/>
+        <Caret Line="115" Column="33" TopLine="105"/>
+      </Position29>
+      <Position30>
+        <Filename Value="KaM_Remake.lpr"/>
+        <Caret Line="408" TopLine="379"/>
       </Position30>
     </JumpHistory>
   </ProjectOptions>

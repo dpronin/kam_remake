@@ -187,8 +187,6 @@ begin
   {$ENDIF}
 end;
 
-{$IF DEFINED(WDC) OR (FPC_FULLVERSION >= 30200)}
-
 constructor KMCopyFileTask.Create(aSrc, aDest: UnicodeString; aOverwrite: Boolean);
 begin
   inherited Create('KMCopyFile');
@@ -210,7 +208,6 @@ begin
   aWorkerThread.Enqueue(KMCopyFileTask.Create(aSrc, aDest, aOverwrite));
 end;
 
-{$ENDIF}
 
 procedure KMDeleteFileToBin(const aPath: UnicodeString);
 begin
