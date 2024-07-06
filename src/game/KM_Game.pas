@@ -1461,8 +1461,8 @@ end;
 procedure TKMGame.AutoSave(aTimestamp: TDateTime);
 begin
   Save(AUTOSAVE_SAVE_NAME, aTimestamp, fAutoSaveWorkerThreadHolder.Worker); //Save to temp file
-  //If possible perform file deletion/renaming in a different thread so we don't delay game
-  //Avoid accessing Self from async thread, copy required states to local variables
+  // If possible perform file deletion/renaming in a different thread so we don't delay game
+  // Avoid accessing Self from async thread, copy required states to local variables
   fAutoSaveWorkerThreadHolder.Worker.Enqueue(TKMAutoSaveRenameTask.Create(fParams.IsMultiPlayerOrSpec));
 end;
 
